@@ -1,15 +1,49 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { NAV_ITEMS } from "@/lib/nav";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
+
+  function close() {
+    setOpen(false);
+    buttonRef.current?.focus();
+  }
+
+  useEffect(() => {
+    if (open) {
+      firstLinkRef.current?.focus();
+    }
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) return;
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") close();
+    }
+
+    function handleClickOutside(event: MouseEvent) {
+      if (!containerRef.current?.contains(event.target as Node)) setOpen(false);
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden" ref={containerRef}>
       <button
+        ref={buttonRef}
         type="button"
         aria-expanded={open}
         aria-controls="menu-mobile"
@@ -29,11 +63,12 @@ export default function MobileNav() {
       {open && (
         <nav id="menu-mobile" aria-label="Menu principal" className="absolute inset-x-0 top-full bg-uem-black">
           <ul className="flex flex-col divide-y divide-white/10 px-4 py-2">
-            {NAV_ITEMS.map((item) => (
+            {NAV_ITEMS.map((item, i) => (
               <li key={item.href}>
                 <Link
+                  ref={i === 0 ? firstLinkRef : undefined}
                   href={item.href}
-                  onClick={() => setOpen(false)}
+                  onClick={close}
                   className="block py-3 text-uem-white hover:text-uem-red"
                 >
                   {item.label}
