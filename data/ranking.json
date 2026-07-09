@@ -1,0 +1,1697 @@
+[
+  {
+    "prova": "1.500 metros",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Sofia Frandoloso",
+        "marca": "5.56.88",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Renatha Schmitt Tack",
+        "marca": "6.14.71",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Elizandra Mazieli Gyre Pereira",
+        "marca": "6.25.07",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Mariele Juliana Machado",
+        "marca": "7.06.84",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "ISABELA LOURDES MION",
+        "marca": "07.07.72",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "1.500 metros",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "GUILHERME SANTOS DE SANTANA",
+        "marca": "4.36.61",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "ADSON GARCIA DA SILVA",
+        "marca": "4.41.11",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Luiz Felipe Ferreira da Silva",
+        "marca": "4.44.57",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "RUAN SOARES MARQUES",
+        "marca": "4.59.24",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Eliton Miranda da Silva",
+        "marca": "5.35.30",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Lucas Matozo Milan",
+        "marca": "5.58.96",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Daniel Verdeiro",
+        "marca": "6.00.52",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "6.07.12",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 9,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "6.09.55",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "10.000 metros",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Mariele Juliana Machado",
+        "marca": "51.31.09",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "10.000 metros",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "JEFERSON ROBERTO ROJO",
+        "marca": "37.34.20",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Gabriel Thiago Henrique dos Santos",
+        "marca": "38.40.81",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Luís Filipe Vilela de Moraes",
+        "marca": "39.22.35",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Luis Felipe Viela de Moraes",
+        "marca": "40.32.56",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "LUIS FILIPE VILELA DE MORAES",
+        "marca": "40.57.13",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "ANTONIO LUIZ DA SILVA",
+        "marca": "45.31.81",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Daniel Verdeiro",
+        "marca": "48.58.36",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Lucas Matozo Milan",
+        "marca": "51.44.93",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "100 metros",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "ANA BELISSA SOARES",
+        "marca": "13.21",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Raphaella Coutinho Cruz",
+        "marca": "14.61",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Anna Lara Secorun",
+        "marca": "14.89",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Ana Clara Machado Barbosa",
+        "marca": "15.14",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Eduarda Carlos Comar",
+        "marca": "15.41",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Geovana Carolina dos Santos F",
+        "marca": "17.01",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Giulia Ferreira dos Santos",
+        "marca": "17.04",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "100 metros",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Gabriel Gonçalves de Marins",
+        "marca": "10.97",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "LEANDRO WATANABE DE GODOI",
+        "marca": "10.99",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Gabriel Gonçalves de Matos",
+        "marca": "11.02",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Matheus da Silva de Oliveira",
+        "marca": "11.63",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "João Vitor Lima dos Santos",
+        "marca": "11.75",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "12.10",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "13.00",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Matheus Henrique dos Santos",
+        "marca": "14.00",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "100m com barreiras",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Jéssica Sara Batista",
+        "marca": "18.06",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Mariane Silva de Oliveira",
+        "marca": "19.36",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Hevelin Briga Pereira",
+        "marca": "20.04",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Eduarda Carlos Comar",
+        "marca": "20.44",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "22.96",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Analice de Lima Lopes",
+        "marca": "23.08",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Isabela Melo Bedendo",
+        "marca": "35.51",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "110m com barreiras",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Luiz Fernando Guisso",
+        "marca": "20.20",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "LUIZ FERNANDO GUISSO",
+        "marca": "20.42",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "21.09",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Matheus da Silva de Oliveira",
+        "marca": "21.39",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "22.64",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "200 metros",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "ANA BELISSA SOARES",
+        "marca": "27.15",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Aysla Keila Cabral",
+        "marca": "27.90",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "MANOELA BEATRIZ DOS SANTOS",
+        "marca": "29.72",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "AYSLA KEILA CABRAL",
+        "marca": "30.20",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Anna Lara Secorun",
+        "marca": "30.82",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Ana Clara Machado Barbosa",
+        "marca": "32.10",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Mariane Silva de Oliveira",
+        "marca": "33.39",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Analice de Lima Lopes",
+        "marca": "33.62",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 9,
+        "atleta": "Hevelin Briga Pereira",
+        "marca": "34.44",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 10,
+        "atleta": "Geovana Carolina dos Santos F",
+        "marca": "35.82",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 11,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "36.97",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "200 metros",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "GABRIEL GONÇALVES DE MATOS",
+        "marca": "22.14",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Gabriel Gonçalves de Matos",
+        "marca": "22.54",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Gabriel Gonçalves de Marins",
+        "marca": "22.60",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "João Vitor Lima dos Santos",
+        "marca": "23.99",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Luiz Fernando Guisso",
+        "marca": "25.54",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "LUIZ FERNANDO GUISSO",
+        "marca": "26.58",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "3.000m com Obstáculos",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "ADSON GARCIA DA SILVA",
+        "marca": "11.40.5",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Gabriel Thiago Henrique dos Santos",
+        "marca": "11.57.14",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "LUIS FILIPE VILELA DE MORAES",
+        "marca": "12.37.2",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Luís Filipe Vilela de Moraes",
+        "marca": "12.47.99",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "João Gabriel Garcez",
+        "marca": "13.00.88",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "MARCOS GOMES MIRANDA",
+        "marca": "13.08.2005",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Lucas Matozo Milan",
+        "marca": "14.55.49",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "400 metros",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Aysla Keila Cabral",
+        "marca": "1.07.52",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "MANOELA BEATRIZ DOS SANTOS",
+        "marca": "1.10.62",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Anna Lara Secorun",
+        "marca": "1.13.90",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Giulia Ferreira dos Santos",
+        "marca": "1.32.58",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "400 metros",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Gabriel Gonçalves de Matos",
+        "marca": "50.48",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Gabriel Gonçalves de Marins",
+        "marca": "50.73",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "GABRIEL GONÇALVES DE MATOS",
+        "marca": "50.89",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "JOAO VITOR LIMA DOS SANTOS",
+        "marca": "53.07",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "João Vitor Lima dos Santos",
+        "marca": "53.24",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "56.85",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "João Gabriel Garcez",
+        "marca": "57.86",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Matheus da Silva de Oliveira",
+        "marca": "58.38",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 9,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "1.04.15",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "400m com barreiras",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Eduarda Carlos Comar",
+        "marca": "1.29.49",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "1.33.24",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "400m com barreiras",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "João Vitor Lima dos Santos",
+        "marca": "1.01.08",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "JOAO VITOR LIMA DOS SANTOS",
+        "marca": "01.03.07",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Luiz Fernando Guisso",
+        "marca": "1.06.10",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "João Gabriel Garcez",
+        "marca": "1.09.47",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "5.000 metros",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Sofia Frandoloso",
+        "marca": "22.50.05",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Renatha Schmitt Tack",
+        "marca": "23.22.54",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Mariele Juliana Machado",
+        "marca": "24.10.47",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "5.000 metros",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "GUILHERME SANTOS DE SANTANA",
+        "marca": "17.26.91",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Gabriel Thiago Henrique dos Santos",
+        "marca": "17.59.68",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Luís Filipe Vilela de Moraes",
+        "marca": "19.00.08",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Luis Felipe Viela de Moraes",
+        "marca": "19.50.37",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Lucas Matozo Milan",
+        "marca": "20.40.64",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Daniel Verdeiro",
+        "marca": "20.44.83",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "RUAN SOARES MARQUES",
+        "marca": "21.59.25",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "MATEUS VELLOSO DA SILVA",
+        "marca": "22.46.77",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "800 metros",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Sofia Frandoloso",
+        "marca": "2.39.82",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Renatha Schmitt Tack",
+        "marca": "2.56.39",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "KAREN VITORIA RAMOS",
+        "marca": "03.05.71",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Hevelin Briga Pereira",
+        "marca": "3.05.87",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Camilla Soletti Costa",
+        "marca": "3.12.29",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Analice de Lima Lopes",
+        "marca": "3.20.69",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Giulia Ferreira dos Santos",
+        "marca": "3.37.44",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "3.49.21",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "800 metros",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Luiz Felipe Ferreira da Silva",
+        "marca": "2.13.91",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Eliton Miranda da Silva",
+        "marca": "2.33.91",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Lucas Matozo Milan",
+        "marca": "2.56.17",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Arremesso do Peso",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Hevelin Briga Pereira",
+        "marca": "7.85",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "EVELLYN FERREIRA ALVES",
+        "marca": "7.85",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "7.16",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "CAMILA FERREIRA DA SILVA",
+        "marca": "6.94",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Gabriele Pedriali Correia",
+        "marca": "6.58",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "ANALICE DE LIMA LOPES",
+        "marca": "6.37",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Isabela Melo Bedendo",
+        "marca": "6.36",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Mariane Silva de Oliveira",
+        "marca": "06.09",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 9,
+        "atleta": "Analice de Lima Lopes",
+        "marca": "5.38",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Arremesso do Peso",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Rafael Souza Mello",
+        "marca": "11.96",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "8.63",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "7.82",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Ismael Berti Ferreira",
+        "marca": "06.04",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "LUIZ FERNANDO DE CARVALHO VILLA",
+        "marca": "5.68",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Luiz Fernando de Carvalho Villa",
+        "marca": "5.37",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Decatlo (Total)",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "3723 pts",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "3326 pts",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Heptatlo (Total)",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Hevelin Briga Pereira",
+        "marca": "2216 pts",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Mariane Silva de Oliveira",
+        "marca": "1781 pts",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Analice de Lima Lopes",
+        "marca": "1672 pts",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "1195 pts",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Isabela Melo Bedendo",
+        "marca": "445 pts",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Lançamento do Dardo",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Hevelin Briga Pereira",
+        "marca": "20.89",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "20.51",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Analice de Lima Lopes",
+        "marca": "19.60",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Mariane Silva de Oliveira",
+        "marca": "19.29",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "EVELLYN FERREIRA ALVES",
+        "marca": "19.22",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "CAMILA FERREIRA DA SILVA",
+        "marca": "17.73",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Elizandra Mazieli Gyre Pereira",
+        "marca": "17.17",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Gabriele Pedriali Correia",
+        "marca": "16.00",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 9,
+        "atleta": "Isabela Melo Bedendo",
+        "marca": "13.76",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 10,
+        "atleta": "ANALICE DE LIMA LOPES",
+        "marca": "12.24",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Lançamento do Dardo",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "36.31",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "29.19",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Rafael Souza Mello",
+        "marca": "26.85",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "MATEUS VELLOSO DA SILVA",
+        "marca": "22.45",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "LUIZ FERNANDO DE CARVALHO VILLA",
+        "marca": "16.98",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Luiz Fernando de Carvalho Villa",
+        "marca": "16.71",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Ismael Berti Ferreira",
+        "marca": "15.14",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Lançamento do Disco",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Gabriele Pedriali Correia",
+        "marca": "19.01",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "18.68",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Lançamento do Disco",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Rafael Souza Mello",
+        "marca": "30.89",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "25.41",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "19.68",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Ismael Berti Ferreira",
+        "marca": "14.92",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Luiz Fernando de Carvalho Villa",
+        "marca": "14.31",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Lançamento do Martelo",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "LUAN FRANCISCO DE OLIVEIRA CANSI",
+        "marca": "42.52",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "30.31",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Revezamento 4x100m",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Univ Estadual de Maringá (equipe)",
+        "marca": "57.12",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "EVELLYN FERREIRA ALVES",
+        "marca": "57.15",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Eduarda Carlos Comar",
+        "marca": "59.95",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Revezamento 4x100m",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "44.57",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Univ Estadual de Maringá (equipe)",
+        "marca": "44.68",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "LEANDRO WATANABE DE GODOI",
+        "marca": "53.43",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Revezamento 4x400m",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Univ Estadual de Maringá (equipe)",
+        "marca": "5.08.96",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Eduarda Carlos Comar",
+        "marca": "5.29.53",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Revezamento 4x400m",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Univ Estadual de Maringá (equipe)",
+        "marca": "3.40.16",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "JOAO VITOR LIMA DOS SANTOS",
+        "marca": "3.45.24",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "João Vitor Lima dos Santos",
+        "marca": "4.20.58",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Revezamento 4x400m Misto",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "João Vitor Lima dos Santos",
+        "marca": "4.21.54",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Revezamento 4x400m Misto",
+    "naipe": "misto",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Univ Estadual de Maringá (equipe)",
+        "marca": "4.03.43",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Salto Triplo",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Jéssica Sara Batista de Souza",
+        "marca": "9.95",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Salto Triplo",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Santhiago da Silva Chagas",
+        "marca": "12.98",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Salto com Vara",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "LUAN FRANCISCO DE OLIVEIRA",
+        "marca": "3.00",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "2.90",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "2.40",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Salto em Altura",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Hevelin Briga Pereira",
+        "marca": "1.32",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Anna Lara Secorun",
+        "marca": "1.32",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Analice de Lima Lopes",
+        "marca": "1.26",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Evellyn Ferreira Alves",
+        "marca": "1.23",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Ana Clara Machado Barbosa",
+        "marca": "1.22",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Raphaella Coutinho Cruz",
+        "marca": "1.22",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Mariane Silva de Oliveira",
+        "marca": "1.20",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 8,
+        "atleta": "Ana Julia Salinas Verri",
+        "marca": "01.10",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Salto em Altura",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Santhiago da Silva Chagas",
+        "marca": "1.65",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "1.64",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "1.54",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Leonardo Henrique Prudente Alves",
+        "marca": "1.40",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Salto em Distância",
+    "naipe": "feminino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "Aysla Keila Cabral",
+        "marca": "4.63",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Jéssica Sara Batista de Souza",
+        "marca": "4.37",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Raphaella Coutinho Cruz",
+        "marca": "04.09",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Anna Lara Secorun",
+        "marca": "3.94",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Hevelin Briga Pereira",
+        "marca": "3.93",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "Mariane Silva de Oliveira",
+        "marca": "3.92",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Analice de Lima Lopes",
+        "marca": "3.68",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  },
+  {
+    "prova": "Salto em Distância",
+    "naipe": "masculino",
+    "marcas": [
+      {
+        "posicao": 1,
+        "atleta": "ANTONIO LUIZ DA SILVA",
+        "marca": "6.13",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 2,
+        "atleta": "Leonardo Henrique Prudente Alves",
+        "marca": "5.77",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 3,
+        "atleta": "Santhiago da Silva Chagas",
+        "marca": "5.72",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 4,
+        "atleta": "Luan Francisco de Oliveira Cansi",
+        "marca": "5.63",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 5,
+        "atleta": "Alison Guilherme Jorge",
+        "marca": "5.60",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 6,
+        "atleta": "MARCOS GOMES MIRANDA",
+        "marca": "4.69",
+        "data": null,
+        "competicao": null
+      },
+      {
+        "posicao": 7,
+        "atleta": "Matheus Henrique dos Santos Fagundes Nogueira",
+        "marca": "4.39",
+        "data": null,
+        "competicao": null
+      }
+    ]
+  }
+]

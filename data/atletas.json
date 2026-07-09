@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "atleta-exemplo-1",
+    "nome": "[nome do atleta a definir]",
+    "foto": "/atletas/placeholder.svg",
+    "provas": ["100 metros", "200 metros"],
+    "melhorMarca": "[conteúdo a definir]",
+    "bioCurta": "[conteúdo a definir]",
+    "bioCompleta": "[conteúdo a definir]",
+    "redesSociais": {}
+  },
+  {
+    "slug": "atleta-exemplo-2",
+    "nome": "[nome do atleta a definir]",
+    "foto": "/atletas/placeholder.svg",
+    "provas": ["800 metros", "1.500 metros"],
+    "melhorMarca": "[conteúdo a definir]",
+    "bioCurta": "[conteúdo a definir]",
+    "bioCompleta": "[conteúdo a definir]",
+    "redesSociais": {}
+  },
+  {
+    "slug": "atleta-exemplo-3",
+    "nome": "[nome do atleta a definir]",
+    "foto": "/atletas/placeholder.svg",
+    "provas": ["Heptatlo"],
+    "melhorMarca": "[conteúdo a definir]",
+    "bioCurta": "[conteúdo a definir]",
+    "bioCompleta": "[conteúdo a definir]",
+    "redesSociais": {}
+  }
+]

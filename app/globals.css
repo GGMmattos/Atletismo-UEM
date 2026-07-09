@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-uem-black: #1a1a1a;
+  --color-uem-red: #ee2e3c;
+  /* uem-red não passa em contraste AA (4.5:1) para texto pequeno sobre fundo branco.
+     uem-red-deep é a mesma cor escurecida, usada em texto/botões sobre fundo claro;
+     uem-red continua valendo para fundo escuro, texto grande e elementos decorativos. */
+  --color-uem-red-deep: #b71c2b;
+  --color-uem-white: #ffffff;
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-uem-red);
+  outline-offset: 2px;
+}
