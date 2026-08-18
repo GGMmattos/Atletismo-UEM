@@ -43,14 +43,14 @@ export default async function AtletaPage({ params }: { params: Promise<{ slug: s
         <div>
           <h1 className="text-2xl font-bold">{atleta.nome}</h1>
           <p className="mt-1 text-uem-black/70">{atleta.provas.join(", ")}</p>
-          <p className="mt-1 font-medium text-uem-red-deep">Melhor marca: {atleta.melhorMarca}</p>
+          <p className="mt-1 font-medium text-uem-green-deep">Melhor marca: {atleta.melhorMarca}</p>
           <p className="mt-4">{atleta.bioCompleta}</p>
           {atleta.redesSociais.instagram && (
             <a
               href={atleta.redesSociais.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block font-medium text-uem-red-deep hover:underline"
+              className="mt-4 inline-block font-medium text-uem-green-deep hover:underline"
             >
               Instagram
             </a>

@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans text-uem-black">
         <a
           href="#conteudo-principal"
-          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-2 focus:rounded focus:bg-uem-red-deep focus:px-4 focus:py-2 focus:text-uem-white"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-2 focus:rounded focus:bg-uem-green-deep focus:px-4 focus:py-2 focus:text-uem-white"
         >
           Pular para o conteúdo principal
         </a>

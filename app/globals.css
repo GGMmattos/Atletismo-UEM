@@ -10,10 +10,22 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-uem-black: #1a1a1a;
-  --color-uem-red: #ee2e3c;
-  /* uem-red não passa em contraste AA (4.5:1) para texto pequeno sobre fundo branco.
-     uem-red-deep é a mesma cor escurecida, usada em texto/botões sobre fundo claro;
+  /* Verde é a cor principal da identidade visual (ver infos.txt). Mesma lógica de dois tons
+     do vermelho abaixo — mas com uma diferença importante: por causa do peso do canal verde
+     no cálculo de luminância, uem-green NÃO passa em contraste 3:1 (mínimo até para texto
+     grande/≥24px e para elementos de UI) sobre fundo claro, não só o limite de 4.5:1 do texto
+     pequeno. Por isso: use uem-green-deep para QUALQUER texto ou botão sobre fundo claro,
+     independente do tamanho; uem-green (vivo) fica reservado para fundo escuro (onde passa com
+     folga) e elementos decorativos sem exigência de contraste (ex: preenchimentos, ilustrações). */
+  --color-uem-green: #00b362;
+  --color-uem-green-deep: #00703d;
+  /* Vermelho é a cor secundária desde a introdução do verde como principal — mantida de
+     propósito em usos pontuais: estados de erro/atenção em formulários e o indicador de
+     campo obrigatório (convenção comum independente da marca), além de alguns detalhes
+     decorativos. uem-red não passa em contraste AA (4.5:1) para texto pequeno sobre fundo
+     branco; uem-red-deep é a versão escurecida, usada em texto/botões sobre fundo claro;
      uem-red continua valendo para fundo escuro, texto grande e elementos decorativos. */
+  --color-uem-red: #ee2e3c;
   --color-uem-red-deep: #b71c2b;
   --color-uem-white: #ffffff;
   --font-sans: var(--font-inter);
@@ -25,6 +37,8 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-uem-red);
+  /* uem-green (vivo) não passa em 3:1 sobre fundo claro — ver comentário acima — por isso o
+     anel de foco global usa a versão -deep, que passa em ambos os contextos (claro e escuro). */
+  outline: 2px solid var(--color-uem-green-deep);
   outline-offset: 2px;
 }

@@ -13,7 +13,7 @@ export default function ImpactoStats({ impacto }: { impacto: Impacto }) {
       {LABELS.map(({ key, label }) => (
         <div key={key} className="text-center">
           <dt className="text-sm text-uem-black/70">{label}</dt>
-          <dd className="text-3xl font-bold text-uem-red">
+          <dd className="text-3xl font-bold text-uem-green-deep">
             {impacto[key] === null ? "—" : impacto[key]}
           </dd>
         </div>

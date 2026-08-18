@@ -30,12 +30,12 @@ export default async function Home() {
     <>
       <div className="relative flex min-h-[420px] items-center justify-center overflow-hidden bg-uem-black text-center text-uem-white">
         <Image src="/hero-placeholder.svg" alt="" fill className="object-cover" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(238,46,60,0.25),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,179,98,0.25),transparent_60%)]" />
         <div className="relative z-10 mx-auto flex max-w-2xl flex-col items-center gap-4 px-4">
           <h1 className="text-4xl font-bold sm:text-5xl">Atletismo UEM</h1>
           <p className="text-lg text-white/90">{apresentacao.frase}</p>
           <div className="mt-2 flex flex-wrap justify-center gap-4">
-            <Link href="/sobre" className="rounded bg-uem-red-deep px-6 py-3 font-medium hover:opacity-90">
+            <Link href="/sobre" className="rounded bg-uem-green-deep px-6 py-3 font-medium hover:opacity-90">
               Conheça o projeto
             </Link>
             <Link

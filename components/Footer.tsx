@@ -13,7 +13,7 @@ export default function Footer() {
         <ul className="flex flex-col gap-1 text-sm text-white/80 sm:items-end">
           <li>
             {SITE.emailInstitucional ? (
-              <a href={`mailto:${SITE.emailInstitucional}`} className="hover:text-uem-red">
+              <a href={`mailto:${SITE.emailInstitucional}`} className="hover:text-uem-green">
                 {SITE.emailInstitucional}
               </a>
             ) : (
@@ -22,7 +22,7 @@ export default function Footer() {
           </li>
           <li>
             {SITE.instagram ? (
-              <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-uem-red">
+              <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-uem-green">
                 Instagram
               </a>
             ) : (
