@@ -21,7 +21,15 @@ export default async function ContatoPage() {
           <dl className="mt-6 flex flex-col gap-3 text-sm">
             <div>
               <dt className="font-medium">E-mail institucional</dt>
-              <dd>{SITE.emailInstitucional ?? "[e-mail institucional a definir]"}</dd>
+              <dd>
+                {SITE.emailInstitucional ? (
+                  <a href={`mailto:${SITE.emailInstitucional}`} className="text-uem-green-deep hover:underline">
+                    {SITE.emailInstitucional}
+                  </a>
+                ) : (
+                  "[e-mail institucional a definir]"
+                )}
+              </dd>
             </div>
             <div>
               <dt className="font-medium">Redes sociais</dt>
@@ -37,7 +45,15 @@ export default async function ContatoPage() {
             </div>
             <div>
               <dt className="font-medium">Localização</dt>
-              <dd>{SITE.localizacao ?? "[localização do CT / pista de treino a definir]"}</dd>
+              <dd>
+                {SITE.localizacao ? (
+                  <a href={SITE.localizacao} target="_blank" rel="noopener noreferrer" className="text-uem-green-deep hover:underline">
+                    Ver no Google Maps
+                  </a>
+                ) : (
+                  "[localização do CT / pista de treino a definir]"
+                )}
+              </dd>
             </div>
           </dl>
         </div>

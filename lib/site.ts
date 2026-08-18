@@ -5,7 +5,7 @@ type SiteInfo = {
 };
 
 export const SITE: SiteInfo = {
-  emailInstitucional: null,
-  instagram: null,
-  localizacao: null,
+  emailInstitucional: "atletismouem@uem.br",
+  instagram: "https://www.instagram.com/atletismouem/",
+  localizacao: "https://maps.app.goo.gl/fhuMw3TPs212myFA7?g_st=ic",
 };
