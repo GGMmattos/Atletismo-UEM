@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visita Escolar à Pista de Atletismo · UEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@700;800&family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --ink: #101a14;
+            --field: #0f3d2e;
+            --field-light: #155a41;
+            --chalk: #f4f6f1;
+            --lane: #e2482c;
+            --lane-yellow: #e8b93a;
+            --line: #c9d3c4;
+            --muted: #5c6b60;
+            --radius: 2px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--chalk);
+            color: var(--ink);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .track-top {
+            height: 10px;
+            background: repeating-linear-gradient(90deg, var(--field) 0 40px, var(--field-light) 40px 80px);
+        }
+
+        header {
+            background: var(--field);
+            color: var(--chalk);
+            padding: 56px 24px 64px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header .lanes {
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(180deg, rgba(244, 246, 241, 0.05) 0 2px, transparent 2px 34px);
+            pointer-events: none;
+        }
+
+        .header-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .eyebrow {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: var(--lane-yellow);
+            margin: 0 0 14px;
+        }
+
+        h1 {
+            font-family: 'Archivo Expanded', sans-serif;
+            font-weight: 800;
+            font-size: clamp(32px, 5.6vw, 48px);
+            line-height: 1.05;
+            margin: 0 0 18px;
+            letter-spacing: -.01em;
+        }
+
+        header p {
+            font-size: 16px;
+            line-height: 1.55;
+            max-width: 54ch;
+            color: #dce7de;
+            margin: 0 0 10px;
+        }
+
+        header .sub {
+            font-size: 13.5px;
+            color: #b9cbbd;
+        }
+
+        main {
+            max-width: 720px;
+            margin: -32px auto 80px;
+            padding: 0 24px;
+            position: relative;
+        }
+
+        .info-strip {
+            display: flex;
+            gap: 16px;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-bottom: none;
+            padding: 18px 24px;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .info-item .k {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 11px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--lane);
+            margin: 0 0 3px;
+        }
+
+        .info-item .v {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        form {
+            background: #fff;
+            border: 1px solid var(--line);
+        }
+
+        .lane-section {
+            display: flex;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .lane-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .lane-number {
+            flex: 0 0 64px;
+            background: var(--ink);
+            color: var(--chalk);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 34px;
+            letter-spacing: .05em;
+        }
+
+        .lane-content {
+            flex: 1;
+            padding: 32px 28px 8px;
+            min-width: 0;
+        }
+
+        .lane-title {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: .03em;
+            margin: 0 0 4px;
+        }
+
+        .lane-sub {
+            font-size: 13.5px;
+            color: var(--muted);
+            margin: 0 0 24px;
+        }
+
+        .field {
+            margin-bottom: 22px;
+        }
+
+        .field label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 7px;
+            color: var(--ink);
+        }
+
+        .field .hint {
+            font-weight: 400;
+            color: var(--muted);
+            font-size: 12px;
+            margin-left: 4px;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        input[type=date],
+        input[type=time],
+        input[type=number],
+        select,
+        textarea {
+            width: 100%;
+            border: 1px solid #b9c4ba;
+            border-radius: var(--radius);
+            padding: 11px 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14.5px;
+            color: var(--ink);
+            background: #fcfdfb;
+            transition: border-color .15s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--field);
+            box-shadow: 0 0 0 3px rgba(21, 90, 65, 0.15);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .row2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .row3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0 0 22px;
+        }
+
+        fieldset legend {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 9px;
+            padding: 0;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .radio-pill {
+            position: relative;
+        }
+
+        .radio-pill input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .radio-pill label {
+            display: inline-block;
+            padding: 9px 16px;
+            border: 1px solid #b9c4ba;
+            border-radius: 999px;
+            font-size: 13.5px;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 0;
+            transition: all .15s;
+        }
+
+        .radio-pill input:checked+label {
+            background: var(--field);
+            border-color: var(--field);
+            color: #fff;
+        }
+
+        .radio-pill input:focus-visible+label {
+            box-shadow: 0 0 0 3px rgba(21, 90, 65, 0.25);
+        }
+
+        .checkbox-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .checkbox-row input {
+            margin-top: 3px;
+            width: 16px;
+            height: 16px;
+            accent-color: var(--field);
+            flex: 0 0 auto;
+        }
+
+        .checkbox-row label {
+            font-size: 13.5px;
+            line-height: 1.5;
+            color: var(--ink);
+        }
+
+        .terms-box {
+            background: #f4f6f1;
+            border: 1px solid var(--line);
+            padding: 16px 18px;
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        .terms-box strong {
+            color: var(--ink);
+        }
+
+        .submit-bar {
+            padding: 24px 28px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        button[type=submit] {
+            background: var(--lane);
+            color: #fff;
+            border: none;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            padding: 15px 32px;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: background .15s;
+        }
+
+        button[type=submit]:hover {
+            background: #c93a21;
+        }
+
+        button[type=submit]:focus-visible {
+            outline: 3px solid var(--ink);
+            outline-offset: 2px;
+        }
+
+        .submit-note {
+            font-size: 12px;
+            color: var(--muted);
+            max-width: 34ch;
+        }
+
+        .confirm {
+            display: none;
+            max-width: 720px;
+            margin: 32px auto 80px;
+            padding: 0 24px;
+        }
+
+        .confirm-inner {
+            background: var(--field);
+            color: #fff;
+            padding: 32px 28px;
+            text-align: left;
+        }
+
+        .confirm-inner h2 {
+            font-family: 'Archivo Expanded', sans-serif;
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .confirm-inner p {
+            margin: 0;
+            color: #dce7de;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        @media (max-width:600px) {
+            header {
+                padding: 44px 18px 56px;
+            }
+
+            main {
+                margin-top: -24px;
+                padding: 0 14px;
+            }
+
+            .confirm {
+                padding: 0 14px;
+            }
+
+            .info-strip {
+                flex-direction: column;
+                padding: 18px 20px;
+            }
+
+            .lane-section {
+                flex-direction: column;
+            }
+
+            .lane-number {
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 10px 20px;
+            }
+
+            .lane-content {
+                padding: 22px 20px 4px;
+            }
+
+            .row2,
+            .row3 {
+                grid-template-columns: 1fr;
+            }
+
+            .submit-bar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            button[type=submit] {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="track-top" aria-hidden="true"></div>
+
+    <header>
+        <div class="lanes" aria-hidden="true"></div>
+        <div class="header-inner">
+            <p class="eyebrow">Centro de Educação Física, Fisioterapia e Terapia Ocupacional</p>
+            <h1>Agende a visita da sua escola à pista de atletismo</h1>
+            <p>Um programa aberto a escolas de Maringá e região para que estudantes conheçam de perto o atletismo: pisar
+                na pista, experimentar provas de corrida, salto e arremesso, e conversar com professores e atletas da
+                UEM.</p>
+            <p class="sub">Preencha os dados abaixo com atenção — eles são usados para confirmar data, organizar a
+                atividade e receber o grupo com segurança.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="info-strip">
+            <div class="info-item">
+                <p class="k">Duração</p>
+                <p class="v">Aprox. 2h por visita</p>
+            </div>
+            <div class="info-item">
+                <p class="k">Vagas por turma</p>
+                <p class="v">Até 40 alunos por período</p>
+            </div>
+            <div class="info-item">
+                <p class="k">Confirmação</p>
+                <p class="v">Por e-mail, em até 5 dias úteis</p>
+            </div>
+        </div>
+
+        <form id="form-visita" novalidate>
+
+            <div class="lane-section">
+                <div class="lane-number">01</div>
+                <div class="lane-content">
+                    <h2 class="lane-title">Dados da escola</h2>
+                    <p class="lane-sub">Identificação da instituição solicitante.</p>
+
+                    <div class="field">
+                        <label for="escola">Nome da escola</label>
+                        <input type="text" id="escola" name="escola" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Rede de ensino</legend>
+                        <div class="radio-group">
+                            <div class="radio-pill">
+                                <input type="radio" id="r-municipal" name="rede" value="municipal" checked>
+                                <label for="r-municipal">Municipal</label>
+                            </div>
+                            <div class="radio-pill">
+                                <input type="radio" id="r-estadual" name="rede" value="estadual">
+                                <label for="r-estadual">Estadual</label>
+                            </div>
+                            <div class="radio-pill">
+                                <input type="radio" id="r-particular" name="rede" value="particular">
+                                <label for="r-particular">Particular</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="row2">
+                        <div class="field">
+                            <label for="municipio">Município</label>
+                            <input type="text" id="municipio" name="municipio"
+                                placeholder="Ex.: Maringá, Sarandi, Marialva..." required>
+                        </div>
+                        <div class="field">
+                            <label for="endereco">Endereço da escola</label>
+                            <input type="text" id="endereco" name="endereco">
+                        </div>
+                    </div>
+
+                    <div class="row2">
+                        <div class="field">
+                            <label for="telefone-escola">Telefone da secretaria</label>
+                            <input type="tel" id="telefone-escola" name="telefone-escola" required>
+                        </div>
+                        <div class="field">
+                            <label for="email-escola">E-mail institucional da escola</label>
+                            <input type="email" id="email-escola" name="email-escola">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lane-section">
+                <div class="lane-number">02</div>
+                <div class="lane-content">
+                    <h2 class="lane-title">Responsável pela visita</h2>
+                    <p class="lane-sub">Quem organiza e acompanha o grupo no dia.</p>
+
+                    <div class="row2">
+                        <div class="field">
+                            <label for="responsavel">Nome do professor(a) ou coordenador(a)</label>
+                            <input type="text" id="responsavel" name="responsavel" required>
+                        </div>
+                        <div class="field">
+                            <label for="cargo">Função na escola</label>
+                            <input type="text" id="cargo" name="cargo" placeholder="Ex.: professor de Educação Física">
+                        </div>
+                    </div>
+
+                    <div class="row2">
+                        <div class="field">
+                            <label for="telefone-resp">Telefone / WhatsApp direto</label>
+                            <input type="tel" id="telefone-resp" name="telefone-resp" required>
+                        </div>
+                        <div class="field">
+                            <label for="email-resp">E-mail direto</label>
+                            <input type="email" id="email-resp" name="email-resp" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lane-section">
+                <div class="lane-number">03</div>
+                <div class="lane-content">
+                    <h2 class="lane-title">A turma que vem visitar</h2>
+                    <p class="lane-sub">Ajuda a preparar as atividades para a idade certa.</p>
+
+                    <div class="row2">
+                        <div class="field">
+                            <label for="serie">Série / ano escolar</label>
+                            <input type="text" id="serie" name="serie" placeholder="Ex.: 6º ano do Fundamental"
+                                required>
+                        </div>
+                        <div class="field">
+                            <label for="faixa-etaria">Faixa etária</label>
+                            <input type="text" id="faixa-etaria" name="faixa-etaria" placeholder="Ex.: 11 a 12 anos"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="row2">
+                        <div class="field">
+                            <label for="n-alunos">Número de alunos</label>
+                            <input type="number" id="n-alunos" name="n-alunos" min="1" max="40" required>
+                        </div>
+                        <div class="field">
+                            <label for="n-acompanhantes">Número de professores / acompanhantes</label>
+                            <input type="number" id="n-acompanhantes" name="n-acompanhantes" min="1" required>
+                        </div>
+                    </div>
+
+                    <fieldset>
+                        <legend>Algum aluno necessita de acessibilidade ou cuidado específico?</legend>
+                        <div class="radio-group">
+                            <div class="radio-pill">
+                                <input type="radio" id="ac-nao" name="acessibilidade" value="nao" checked>
+                                <label for="ac-nao">Não</label>
+                            </div>
+                            <div class="radio-pill">
+                                <input type="radio" id="ac-sim" name="acessibilidade" value="sim">
+                                <label for="ac-sim">Sim</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="obs-acessibilidade">Se sim, descreva as necessidades <span class="hint">para
+                                adaptarmos as atividades</span></label>
+                        <textarea id="obs-acessibilidade" name="obs-acessibilidade"
+                            placeholder="Ex.: aluno cadeirante, deficiência visual, condição respiratória..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lane-section">
+                <div class="lane-number">04</div>
+                <div class="lane-content">
+                    <h2 class="lane-title">Data e horário</h2>
+                    <p class="lane-sub">Visitas de terça a sexta, das 8h às 17h.</p>
+
+                    <div class="row2">
+                        <div class="field">
+                            <label for="data">Data pretendida</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+                        <div class="field">
+                            <label for="data-alt">Data alternativa</label>
+                            <input type="date" id="data-alt" name="data-alt">
+                        </div>
+                    </div>
+
+                    <div class="row2">
+                        <div class="field">
+                            <label for="hora-chegada">Horário previsto de chegada</label>
+                            <input type="time" id="hora-chegada" name="hora-chegada" required>
+                        </div>
+                        <div class="field">
+                            <label for="transporte">Transporte do grupo</label>
+                            <select id="transporte" name="transporte" required>
+                                <option value="">Selecione</option>
+                                <option value="onibus-escolar">Ônibus escolar próprio</option>
+                                <option value="onibus-fretado">Ônibus fretado pela escola</option>
+                                <option value="transporte-publico">Transporte público</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lane-section">
+                <div class="lane-number">05</div>
+                <div class="lane-content">
+                    <h2 class="lane-title">O que a turma quer vivenciar</h2>
+                    <p class="lane-sub">Selecione o que mais interessa ao grupo — a equipe monta o roteiro da visita com
+                        base nisso.</p>
+
+                    <fieldset>
+                        <legend>Modalidades de interesse</legend>
+                        <div class="radio-group">
+                            <div class="radio-pill">
+                                <input type="checkbox" id="m-corrida" name="modalidades" value="corrida">
+                                <label for="m-corrida">Corrida</label>
+                            </div>
+                            <div class="radio-pill">
+                                <input type="checkbox" id="m-salto" name="modalidades" value="saltos">
+                                <label for="m-salto">Saltos</label>
+                            </div>
+                            <div class="radio-pill">
+                                <input type="checkbox" id="m-arremesso" name="modalidades" value="arremesso">
+                                <label for="m-arremesso">Arremesso / lançamento</label>
+                            </div>
+                            <div class="radio-pill">
+                                <input type="checkbox" id="m-geral" name="modalidades" value="geral" checked>
+                                <label for="m-geral">Não sei, quero conhecer tudo</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Objetivo principal da visita</legend>
+                        <div class="radio-group">
+                            <div class="radio-pill">
+                                <input type="radio" id="obj-conhecer" name="objetivo" value="conhecer" checked>
+                                <label for="obj-conhecer">Conhecer o esporte e o espaço</label>
+                            </div>
+                            <div class="radio-pill">
+                                <input type="radio" id="obj-experimentar" name="objetivo" value="experimentar">
+                                <label for="obj-experimentar">Experimentar as provas na prática</label>
+                            </div>
+                            <div class="radio-pill">
+                                <input type="radio" id="obj-projeto" name="objetivo" value="projeto">
+                                <label for="obj-projeto">Complementar um projeto pedagógico</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="observacoes">Observações <span class="hint">opcional</span></label>
+                        <textarea id="observacoes" name="observacoes"
+                            placeholder="Ex.: projeto de Educação Física em andamento, alunos com receio de atividade física, restrição alimentar para lanche, etc."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lane-section">
+                <div class="lane-number">06</div>
+                <div class="lane-content">
+                    <h2 class="lane-title">Confirmação</h2>
+                    <p class="lane-sub">Última etapa antes de enviar a solicitação.</p>
+
+                    <div class="terms-box">
+                        <strong>Responsabilidade durante a visita.</strong> A escola solicitante é responsável pelo
+                        acompanhamento e pela integridade física dos alunos durante todo o período na UEM, incluindo o
+                        deslocamento até o local. Recomenda-se roupa e calçado apropriados para atividade física e leva
+                        de água.
+                    </div>
+
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="termo" name="termo" required>
+                        <label for="termo">A escola está ciente e de acordo com as condições de participação descritas
+                            acima.</label>
+                    </div>
+
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="imagem" name="imagem">
+                        <label for="imagem">Autorizo o uso de imagens da visita para fins de divulgação institucional da
+                            UEM <span class="hint">opcional</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit-bar">
+                <span class="submit-note">A confirmação de data e horário é enviada por e-mail ao responsável
+                    indicado.</span>
+                <button type="submit">Solicitar agendamento</button>
+            </div>
+        </form>
+    </main>
+
+    <div class="confirm" id="confirm">
+        <div class="confirm-inner">
+            <h2>Solicitação enviada</h2>
+            <p>Recebemos o pedido de visita da sua escola. A equipe do Centro de Educação Física confirma a data e o
+                horário por e-mail em até 5 dias úteis.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('form-visita').addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!this.checkValidity()) {
+                this.reportValidity();
+                return;
+            }
+            this.style.display = 'none';
+            document.getElementById('confirm').style.display = 'block';
+            document.getElementById('confirm').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>

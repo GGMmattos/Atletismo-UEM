@@ -86,14 +86,17 @@ Abra [http://localhost:3000](http://localhost:3000) e confira se sua alteração
 
 O site é publicado automaticamente pela Vercel a cada `push`/merge na branch principal (`main`) — **não existe um botão de "publicar"**, nem login de administrador. Editar um arquivo `.json` pelo próprio site do GitHub e confirmar ("commit") já dispara uma nova publicação sozinha, em poucos minutos.
 
-### Configuração do formulário de contato (Formspree)
+### Configuração dos formulários (Formspree)
 
-O formulário de Contato usa o [Formspree](https://formspree.io) para enviar e-mails, sem precisar de servidor próprio.
+O formulário de Contato e o de agendamento do "Escola na Pista" usam o [Formspree](https://formspree.io) para enviar e-mails, sem precisar de servidor próprio. São dois formulários separados no Formspree (para não misturar os assuntos na mesma caixa), cada um com sua variável de ambiente:
 
-1. Crie uma conta gratuita em formspree.io e um formulário novo.
-2. Copie o ID do formulário (algo como `xreqwabc`).
-3. No painel do projeto na Vercel, em Settings → Environment Variables, crie `NEXT_PUBLIC_FORMSPREE_ID` com esse valor, e refaça o deploy.
-4. Para testar localmente, copie `.env.local.example` para `.env.local` e preencha o mesmo valor.
+- `NEXT_PUBLIC_FORMSPREE_ID` → formulário de Contato.
+- `NEXT_PUBLIC_FORMSPREE_ESCOLA_ID` → formulário de agendamento de visitas do "Escola na Pista".
+
+1. Crie uma conta gratuita em formspree.io e um formulário novo para cada uso acima.
+2. Copie o ID de cada formulário (algo como `xreqwabc`).
+3. No painel do projeto na Vercel, em Settings → Environment Variables, crie as duas variáveis com esses valores, e refaça o deploy.
+4. Para testar localmente, copie `.env.local.example` para `.env.local` e preencha os mesmos valores.
 
 ## O que NÃO editar sem saber programar
 

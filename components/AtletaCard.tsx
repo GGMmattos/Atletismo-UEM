@@ -19,7 +19,7 @@ export default function AtletaCard({ atleta }: { atleta: Atleta }) {
       <div className="p-4">
         <h3 className="font-semibold">{atleta.nome}</h3>
         <p className="text-sm text-uem-black/70">{atleta.provas.join(", ")}</p>
-        <p className="mt-1 text-sm font-medium text-uem-red-deep">Melhor marca: {atleta.melhorMarca}</p>
+        <p className="mt-1 text-sm font-medium text-uem-green-deep">Melhor marca: {atleta.melhorMarca}</p>
       </div>
     </Link>
   );

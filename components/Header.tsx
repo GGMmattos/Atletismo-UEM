@@ -18,7 +18,7 @@ export default function Header() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm font-medium text-uem-white transition-colors hover:text-uem-red"
+                  className="text-sm font-medium text-uem-white transition-colors hover:text-uem-green"
                 >
                   {item.label}
                 </Link>

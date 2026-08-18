@@ -69,7 +69,7 @@ export default function MobileNav() {
                   ref={i === 0 ? firstLinkRef : undefined}
                   href={item.href}
                   onClick={close}
-                  className="block py-3 text-uem-white hover:text-uem-red"
+                  className="block py-3 text-uem-white hover:text-uem-green"
                 >
                   {item.label}
                 </Link>

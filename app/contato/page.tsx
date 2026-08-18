@@ -27,7 +27,7 @@ export default async function ContatoPage() {
               <dt className="font-medium">Redes sociais</dt>
               <dd>
                 {SITE.instagram ? (
-                  <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="text-uem-red-deep hover:underline">
+                  <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="text-uem-green-deep hover:underline">
                     Instagram
                   </a>
                 ) : (
