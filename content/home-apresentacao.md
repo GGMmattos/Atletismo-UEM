@@ -1,4 +1,4 @@
 ---
 titulo: "Atletismo UEM"
-frase: "[frase de apresentação do projeto a definir — missão e propósito do Atletismo-UEM, a ser validado pela coordenação.]"
+frase: "Projeto de extensão da UEM que democratiza o acesso ao atletismo, esporte base reconhecido mundialmente, com aprendizagem, ensino e treinamento para crianças, universitários e atletas master."
 ---

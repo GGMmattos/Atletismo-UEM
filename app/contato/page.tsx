@@ -32,6 +32,21 @@ export default async function ContatoPage() {
               </dd>
             </div>
             <div>
+              <dt className="font-medium">Telefone</dt>
+              <dd>
+                {SITE.telefone ? (
+                  <a
+                    href={`tel:+55${SITE.telefone.replace(/\D/g, "")}`}
+                    className="text-uem-green-deep hover:underline"
+                  >
+                    {SITE.telefone}
+                  </a>
+                ) : (
+                  "[telefone institucional a definir]"
+                )}
+              </dd>
+            </div>
+            <div>
               <dt className="font-medium">Redes sociais</dt>
               <dd>
                 {SITE.instagram ? (
