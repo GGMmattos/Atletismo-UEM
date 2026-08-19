@@ -385,8 +385,7 @@ export default function EscolaVisitaForm() {
         <div className="flex items-start gap-3">
           <input type="checkbox" id="imagem" name="imagem" className="mt-1 h-4 w-4 accent-uem-green-deep" />
           <label htmlFor="imagem" className="text-sm text-uem-black">
-            Autorizo o uso de imagens da visita para fins de divulgação institucional da UEM{" "}
-            <span className="text-uem-black/50">(opcional)</span>
+            Autorizo o uso de imagens da visita para fins de divulgação institucional
           </label>
         </div>
       </LaneSection>
