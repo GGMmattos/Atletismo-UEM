@@ -29,7 +29,14 @@ export default async function Home() {
   return (
     <>
       <div className="relative flex min-h-[420px] items-center justify-center overflow-hidden bg-uem-black text-center text-uem-white">
-        <Image src="/hero-placeholder.svg" alt="" fill className="object-cover" />
+        <Image
+          src="/hero-trofeu-adhemar-2025.jpg"
+          alt="Equipe do Atletismo UEM comemorando com medalhas e troféus no Troféu Adhemar Ferreira da Silva 2025"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-uem-black/55" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,179,98,0.25),transparent_60%)]" />
         <div className="relative z-10 mx-auto flex max-w-2xl flex-col items-center gap-4 px-4">
           <h1 className="text-4xl font-bold sm:text-5xl">Atletismo UEM</h1>
