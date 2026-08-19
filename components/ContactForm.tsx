@@ -88,6 +88,7 @@ export default function ContactForm() {
       </div>
 
       <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+      <input type="hidden" name="_subject" value="Nova mensagem — Contato do site Atletismo UEM" />
 
       <button
         type="submit"
