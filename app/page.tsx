@@ -30,29 +30,36 @@ export default async function Home() {
 
   return (
     <>
-      <div className="relative flex min-h-[420px] items-center justify-center overflow-hidden bg-uem-black text-center text-uem-white">
-        <Image
-          src="/hero-trofeu-adhemar-2025.jpg"
-          alt="Equipe do Atletismo UEM comemorando com medalhas e troféus no Troféu Adhemar Ferreira da Silva 2025"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-uem-black/55" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,179,98,0.25),transparent_60%)]" />
-        <div className="relative z-10 mx-auto flex max-w-2xl flex-col items-center gap-4 px-4">
-          <h1 className="text-4xl font-bold sm:text-5xl">Atletismo UEM</h1>
-          <p className="text-lg text-white/90">{apresentacao.frase}</p>
-          <div className="mt-2 flex flex-wrap justify-center gap-4">
-            <Link href="/sobre" className="rounded bg-uem-green-deep px-6 py-3 font-medium hover:opacity-90">
-              Conheça o projeto
-            </Link>
-            <Link
-              href="/atletismo-universitario"
-              className="rounded border border-uem-white px-6 py-3 font-medium hover:bg-uem-white hover:text-uem-black"
-            >
-              Participe
-            </Link>
+      <div className="bg-uem-black text-center text-uem-white">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="relative aspect-[1200/650] min-h-[220px] overflow-hidden">
+            <Image
+              src="/hero-atletismo-uem-2024.jpg"
+              alt="Equipe do Atletismo UEM reunida com medalhas, troféus e a bandeira da UEM após uma competição"
+              fill
+              priority
+              className="object-contain"
+            />
+            <div className="absolute inset-0 bg-uem-black/55" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(0,179,98,0.25),transparent_60%)]" />
+            <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col items-center justify-center gap-4 px-4">
+              <h1 className="text-4xl font-bold sm:text-5xl">Atletismo UEM</h1>
+              <p className="text-lg text-white/90">{apresentacao.frase}</p>
+              <div className="mt-2 flex flex-wrap justify-center gap-4">
+                <Link
+                  href="/sobre"
+                  className="rounded bg-uem-green-deep px-6 py-3 font-medium hover:opacity-90"
+                >
+                  Conheça o projeto
+                </Link>
+                <Link
+                  href="/atletismo-universitario"
+                  className="rounded border border-uem-white px-6 py-3 font-medium hover:bg-uem-white hover:text-uem-black"
+                >
+                  Participe
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
