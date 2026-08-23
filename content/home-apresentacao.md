@@ -1,4 +1,4 @@
 ---
 titulo: "Atletismo UEM"
-frase: "Projeto de extensão da UEM que democratiza o acesso ao atletismo, esporte base reconhecido mundialmente, com aprendizagem, ensino e treinamento para crianças, universitários e atletas master."
+frase: "Não é só sobre quem corre. É sobre quem torce, apoia e vibra junto. Bem-vindo ao Atletismo UEM"
 ---

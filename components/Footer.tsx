@@ -35,6 +35,18 @@ export default function Footer() {
       <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-white/50">
         Projeto de extensão — Universidade Estadual de Maringá (UEM)
       </div>
+
+      <div className="border-t border-white/10 px-4 py-3 text-center text-xs text-white/50">
+        Developed by{" "}
+        <a
+          href="https://www.linkedin.com/in/gabriel-matos-8122943b3/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/70 hover:text-uem-green"
+        >
+          Gabriel Matos
+        </a>
+      </div>
     </footer>
   );
 }
