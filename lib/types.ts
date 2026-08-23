@@ -55,3 +55,14 @@ export type Impacto = {
   medalhasConquistadas: number | null;
   atletasNaEquipe: number | null;
 };
+
+export type NoticiaMeta = {
+  slug: string;
+  titulo: string;
+  data: string | null;
+  resumo: string;
+  capa: string | null;
+  capaAlt: string | null;
+};
+
+export type Noticia = NoticiaMeta & { html: string };

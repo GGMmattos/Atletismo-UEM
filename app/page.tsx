@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getContent } from "@/lib/content";
+import { getAllNoticias, getContent } from "@/lib/content";
 import ImpactoStats from "@/components/ImpactoStats";
+import NoticiaCard from "@/components/NoticiaCard";
 import Section from "@/components/Section";
 import impacto from "@/data/impacto.json";
 
@@ -25,6 +26,7 @@ const FRENTES = [
 
 export default async function Home() {
   const apresentacao = await getContent("home-apresentacao");
+  const ultimasNoticias = getAllNoticias().slice(0, 3);
 
   return (
     <>
@@ -73,6 +75,21 @@ export default async function Home() {
       <Section title="Nosso impacto" className="bg-uem-black/5">
         <ImpactoStats impacto={impacto} />
       </Section>
+
+      {ultimasNoticias.length > 0 && (
+        <Section title="Últimas notícias">
+          <div className="grid gap-6 sm:grid-cols-3">
+            {ultimasNoticias.map((noticia) => (
+              <NoticiaCard key={noticia.slug} noticia={noticia} />
+            ))}
+          </div>
+          <div className="mt-6 text-center">
+            <Link href="/noticias" className="font-medium text-uem-green-deep hover:underline">
+              Ver todas as notícias
+            </Link>
+          </div>
+        </Section>
+      )}
     </>
   );
 }

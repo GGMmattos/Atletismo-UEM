@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site institucional do Atletismo-UEM (projeto de extensão da Universidade Estadual de Maringá), implementado como MVP conforme `prd.md` — **leia o PRD por inteiro antes de mudar escopo ou arquitetura**, ele documenta as decisões de produto já validadas (stack, modelo de dados, fases). `README.md` é o guia de manutenção voltado a bolsistas não-técnicos que editam `/data` e `/content` — não duplique aquele conteúdo aqui.
 
-Materiais de origem (não fazem parte do site em si): `detalhamento.pdf` (proposta original), `Ranking Atletismo UEM.xlsx` (fonte da migração única do ranking, não é reimportada depois), `Imagens/` (logos originais não otimizados — as versões usadas pelo site já foram migradas para `/public/logos`).
+Materiais de origem (não fazem parte do site em si): `detalhamento.pdf` (proposta original), `Ranking Atletismo UEM.xlsx` (fonte da migração única do ranking, não é reimportada depois), `Imagens/` (logos originais não otimizados — as versões usadas pelo site já foram migradas para `/public/logos`), `Noticias/` (rascunhos `.docx` recebidos da coordenação — cada notícia publicada tem seu conteúdo transcrito para `content/noticias/*.md`; o site nunca lê `.docx` diretamente).
 
 ## Comandos
 
