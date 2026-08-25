@@ -1,6 +1,22 @@
 [
-  { "src": "/galeria/placeholder.svg", "alt": "Foto da equipe em ação — em breve", "categoria": null },
-  { "src": "/galeria/placeholder.svg", "alt": "Foto da equipe em ação — em breve", "categoria": null },
-  { "src": "/galeria/placeholder.svg", "alt": "Foto da equipe em ação — em breve", "categoria": null },
-  { "src": "/galeria/placeholder.svg", "alt": "Foto da equipe em ação — em breve", "categoria": null }
+  { "src": "/galeria/chegada-revezamento.jpg", "alt": "Atleta da Atletismo-UEM cruzando a linha de chegada com o bastão do revezamento", "categoria": null },
+  { "src": "/galeria/equipe-arquibancada-noite-1.jpg", "alt": "Equipe da Atletismo-UEM reunida na arquibancada à noite, comemorando", "categoria": null },
+  { "src": "/galeria/atleta-medalha-bronze-1.jpg", "alt": "Atleta da Atletismo-UEM posando com medalha de bronze ao pôr do sol", "categoria": null },
+  { "src": "/galeria/atleta-medalha-bronze-2.jpg", "alt": "Atleta da Atletismo-UEM com medalha de bronze, retrato ao entardecer", "categoria": null },
+  { "src": "/galeria/equipe-arquibancada-noite-2.jpg", "alt": "Equipe da Atletismo-UEM reunida na arquibancada à noite, foto em grupo", "categoria": null },
+  { "src": "/galeria/podio-medalhas-1.jpg", "alt": "Atletas da Atletismo-UEM no pódio com medalhas ao lado de atleta de outra equipe", "categoria": null },
+  { "src": "/galeria/chegada-noturna.jpg", "alt": "Atleta da Atletismo-UEM cruzando a linha de chegada em prova noturna", "categoria": null },
+  { "src": "/galeria/equipe-quarteto-1.jpg", "alt": "Quatro atletas da Atletismo-UEM posando juntos com números de peito", "categoria": null },
+  { "src": "/galeria/podio-medalhas-2.jpg", "alt": "Atletas da Atletismo-UEM no pódio com medalhas ao lado de atleta de outra equipe", "categoria": null },
+  { "src": "/galeria/equipe-comemoracao.jpg", "alt": "Atletas da Atletismo-UEM comemorando juntos após a prova", "categoria": null },
+  { "src": "/galeria/atleta-medalha-feminina.jpg", "alt": "Atleta da Atletismo-UEM com medalha de prata, retrato ao entardecer", "categoria": null },
+  { "src": "/galeria/equipe-quarteto-2.jpg", "alt": "Quatro atletas da Atletismo-UEM posando juntos com medalhas", "categoria": null },
+  { "src": "/galeria/equipe-banner-uem.jpg", "alt": "Equipe completa da Atletismo-UEM em foto de grupo com faixa da UEM Maringá e bandeira do time", "categoria": null },
+  { "src": "/galeria/equipe-descontraida.jpg", "alt": "Equipe da Atletismo-UEM reunida ao ar livre em momento descontraído", "categoria": null },
+  { "src": "/galeria/podio-revezamento-misto.jpg", "alt": "Atletas de diferentes equipes universitárias, incluindo a Atletismo-UEM, posando juntos após a prova", "categoria": null },
+  { "src": "/galeria/prova-barreiras.jpg", "alt": "Atleta da Atletismo-UEM saltando uma barreira durante prova de corrida com obstáculos", "categoria": null },
+  { "src": "/galeria/trofeu-adhemar-podio-1.jpg", "alt": "Atletas da Atletismo-UEM no pódio do Troféu Adhemar 2025 com medalhas", "categoria": "Troféu Adhemar 2025" },
+  { "src": "/galeria/trofeu-adhemar-equipe-mista.jpg", "alt": "Atleta da Atletismo-UEM em foto com competidores de outras universidades no Troféu Adhemar 2025", "categoria": "Troféu Adhemar 2025" },
+  { "src": "/galeria/vice-campeao-trofeu-adhemar.jpg", "alt": "Técnico da Atletismo-UEM segurando os troféus de vice-campeão universitário masculino e feminino no Troféu Adhemar 2025", "categoria": "Troféu Adhemar 2025" },
+  { "src": "/galeria/atleta-costas-atletismo-uem.jpg", "alt": "Atleta da Atletismo-UEM visto de costas, com o uniforme do time, no Troféu Adhemar 2025", "categoria": "Troféu Adhemar 2025" }
 ]
