@@ -1,32 +1,32 @@
 [
   {
-    "slug": "atleta-exemplo-1",
-    "nome": "[nome do atleta a definir]",
-    "foto": "/atletas/placeholder.svg",
-    "provas": ["100 metros", "200 metros"],
-    "melhorMarca": "[conteúdo a definir]",
-    "bioCurta": "[conteúdo a definir]",
-    "bioCompleta": "[conteúdo a definir]",
-    "redesSociais": {}
+    "slug": "antonio-luiz-da-silva",
+    "nome": "Antonio Luiz da Silva",
+    "foto": "/atletas/antonio-luiz.jpg",
+    "provas": ["Salto em distância"],
+    "melhorMarca": "6,13 m",
+    "bioCurta": "Acadêmico de Educação Física, natural de Terra Rica, começou no salto em distância há 2 anos e já garantiu o 4º lugar em sua primeira competição oficial.",
+    "bioCompleta": "Me chamo Antonio Luiz da Silva, sou acadêmico de Educação Física, tenho 21 anos e sou natural de Terra Rica. Meu primeiro contato com o atletismo foi na universidade, e desde então venho vivendo e aprendendo com esta modalidade há 2 anos. Sou atleta de salto em distância e busco, a cada treino, evoluir tecnicamente na prova.\n\nParticipei recentemente do 70º Troféu Adhemar Ferreira, onde estabeleci minha melhor marca de 6,13 m, o que me rendeu o quarto lugar na minha primeira competição oficial de atletismo. Foi um resultado que me motivou ainda mais a continuar me dedicando ao esporte.",
+    "redesSociais": { "instagram": "https://instagram.com/neto_09_" }
   },
   {
-    "slug": "atleta-exemplo-2",
-    "nome": "[nome do atleta a definir]",
-    "foto": "/atletas/placeholder.svg",
-    "provas": ["800 metros", "1.500 metros"],
-    "melhorMarca": "[conteúdo a definir]",
-    "bioCurta": "[conteúdo a definir]",
-    "bioCompleta": "[conteúdo a definir]",
-    "redesSociais": {}
+    "slug": "guilherme-santos-de-santana",
+    "nome": "Guilherme Santos de Santana",
+    "foto": "/atletas/guilherme-santos.jpg",
+    "provas": ["1.500 metros", "5.000 metros", "10.000 metros"],
+    "melhorMarca": "4:27 (1.500 m) · 17:16 (5.000 m) · 37:08 (10.000 m)",
+    "bioCurta": "Meio-fundista e fundista, iniciou no Atletismo UEM em 2025 e logo disputou os Jogos Universitários do Paraná; campeão sub-20 da Prova Tiradentes 2026, em Maringá.",
+    "bioCompleta": "Comecei no atletismo durante o primeiro ano da faculdade, em 2025, através do Atletismo UEM. No mesmo ano, pude competir nos Jogos Universitários do Paraná, representando a universidade nos 5.000 m e 10.000 m, terminando o ano competindo o JOIA nos 800 m e 1.500 m, onde saí com um bronze e uma prata, respectivamente.\n\nEm 2026, fui campeão sub-20 da Prova Tiradentes, em Maringá (10 km).",
+    "redesSociais": { "instagram": "https://instagram.com/gui_santossnt" }
   },
   {
-    "slug": "atleta-exemplo-3",
-    "nome": "[nome do atleta a definir]",
-    "foto": "/atletas/placeholder.svg",
-    "provas": ["Heptatlo"],
-    "melhorMarca": "[conteúdo a definir]",
-    "bioCurta": "[conteúdo a definir]",
-    "bioCompleta": "[conteúdo a definir]",
-    "redesSociais": {}
+    "slug": "luis-filipe-vilela",
+    "nome": "Luís Filipe Vilela",
+    "foto": "/atletas/luis-vilela.jpg",
+    "provas": ["5.000 metros", "10.000 metros"],
+    "melhorMarca": "17:35 (5 km) · 36:49 (10 km) · 1:26:49 (21 km)",
+    "bioCurta": "Fundista, entrou para o Atletismo UEM em novembro de 2022 e hoje treina seis vezes por semana; já disputou competições estaduais e nacionais e completou duas meias maratonas.",
+    "bioCompleta": "Minha trajetória no atletismo se confunde com a entrada no projeto Atletismo UEM, em novembro de 2022, a convite do amigo Éliton Miranda. Antes disso, corria esporadicamente na rua e em algumas provas. Ao iniciar os treinos no projeto, passei a treinar de forma periódica: primeiro três vezes por semana e, depois de um ano, seis vezes por semana, seguindo o planejamento do treinador Jeferson Rojo.\n\nFoi através do projeto que vivi alguns dos melhores momentos da minha vida, com a estreia em competições estaduais e nacionais e experiências únicas, incluindo duas meias maratonas (2024 e 2025).",
+    "redesSociais": { "instagram": "https://instagram.com/lulivilelaa" }
   }
 ]

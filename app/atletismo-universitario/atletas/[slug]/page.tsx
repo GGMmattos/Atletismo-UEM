@@ -44,7 +44,11 @@ export default async function AtletaPage({ params }: { params: Promise<{ slug: s
           <h1 className="text-2xl font-bold">{atleta.nome}</h1>
           <p className="mt-1 text-uem-black/70">{atleta.provas.join(", ")}</p>
           <p className="mt-1 font-medium text-uem-green-deep">Melhor marca: {atleta.melhorMarca}</p>
-          <p className="mt-4">{atleta.bioCompleta}</p>
+          <div className="mt-4 space-y-4">
+            {atleta.bioCompleta.split("\n\n").map((paragrafo, i) => (
+              <p key={i}>{paragrafo}</p>
+            ))}
+          </div>
           {atleta.redesSociais.instagram && (
             <a
               href={atleta.redesSociais.instagram}
