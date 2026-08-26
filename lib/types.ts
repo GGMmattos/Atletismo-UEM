@@ -56,6 +56,15 @@ export type Impacto = {
   atletasNaEquipe: number | null;
 };
 
+export type Artigo = {
+  titulo: string;
+  autores: string[];
+  revista: string | null;
+  ano: number | null;
+  resumo: string;
+  doi: string;
+};
+
 export type NoticiaMeta = {
   slug: string;
   titulo: string;
