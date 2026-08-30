@@ -28,5 +28,35 @@
     "bioCurta": "Fundista, entrou para o Atletismo UEM em novembro de 2022 e hoje treina seis vezes por semana; já disputou competições estaduais e nacionais e completou duas meias maratonas.",
     "bioCompleta": "Minha trajetória no atletismo se confunde com a entrada no projeto Atletismo UEM, em novembro de 2022, a convite do amigo Éliton Miranda. Antes disso, corria esporadicamente na rua e em algumas provas. Ao iniciar os treinos no projeto, passei a treinar de forma periódica: primeiro três vezes por semana e, depois de um ano, seis vezes por semana, seguindo o planejamento do treinador Jeferson Rojo.\n\nFoi através do projeto que vivi alguns dos melhores momentos da minha vida, com a estreia em competições estaduais e nacionais e experiências únicas, incluindo duas meias maratonas (2024 e 2025).",
     "redesSociais": { "instagram": "https://instagram.com/lulivilelaa" }
+  },
+  {
+    "slug": "ana-clara-machado-barbosa",
+    "nome": "Ana Clara Machado Barbosa",
+    "foto": "/atletas/ana-clara.jpg",
+    "provas": ["800 metros", "400 metros"],
+    "melhorMarca": "1:18 (400 m)",
+    "bioCurta": "Corredora de 800 m e 400 m, teve seu primeiro contato com o atletismo já na universidade; desde então soma participações no Troféu Adhemar Ferreira da Silva, nos Jogos Universitários Paranaenses e nos Jogos Interatléticas.",
+    "bioCompleta": "O primeiro contato com a modalidade foi de forma tardia, já na universidade. Desde então, tenho me envolvido em atividades relacionadas ao Projeto de Extensão Atletismo UEM e participado de competições como o Troféu Adhemar Ferreira da Silva, os Jogos Universitários Paranaenses e os Jogos Interatléticas.",
+    "redesSociais": {}
+  },
+  {
+    "slug": "aysla-cabral",
+    "nome": "Aysla Cabral",
+    "foto": "/atletas/aysla-cabral.jpg",
+    "provas": ["400 metros", "200 metros", "Salto em distância"],
+    "melhorMarca": "1:03.52 (400 m) · 27,90 (200 m) · 4,63 m (salto em distância)",
+    "bioCurta": "Velocista e saltadora, começou no atletismo aos 13 anos nos Jogos Escolares e hoje disputa competições universitárias e nacionais pelo Atletismo UEM nos 400 m, 200 m e salto em distância.",
+    "bioCompleta": "Minha história com o atletismo começou aos 13 anos, nos Jogos Escolares. Desde o início, o esporte foi muito mais do que uma atividade física: foi onde encontrei reconhecimento, confiança e uma forma de descobrir minhas próprias capacidades. No Projeto Atletismo UEM, pude evoluir como atleta por meio de treinamentos direcionados às minhas provas, participar de competições universitárias e nacionais, conhecer grandes atletas e viver experiências que marcaram minha trajetória. Também tive a oportunidade de viajar, construir amizades que considero como família e representar o atletismo em diferentes espaços. O atletismo me mostrou que algumas histórias podem ser interrompidas, mas nunca precisam chegar ao fim.",
+    "redesSociais": {}
+  },
+  {
+    "slug": "luan-francisco-de-oliveira-cansi",
+    "nome": "Luan Francisco de Oliveira Cansi",
+    "foto": "/atletas/luan-cansi.jpg",
+    "provas": ["Lançamento do martelo"],
+    "melhorMarca": "42,52 m",
+    "bioCurta": "Lançador de martelo, evoluiu de 26 m a 42 m ao longo da graduação, construindo no Atletismo UEM uma trajetória que vai muito além das marcas alcançadas.",
+    "bioCompleta": "Ao longo da graduação, construí uma trajetória no atletismo que foi muito além das marcas alcançadas. Desde o primeiro ano, apaixonei-me pela modalidade e, especialmente, pelo lançamento do martelo, no qual evoluí dos 26 m aos 42 m. Mais do que metros, essa trajetória representa meu crescimento como atleta, acadêmico e pessoa. Cada treino, competição e conversa ao lado da pista fez parte dessa construção e tornou essa experiência inesquecível.",
+    "redesSociais": {}
   }
 ]
