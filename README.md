@@ -8,6 +8,7 @@ Guia rápido para quem vai manter este site — pensado para bolsistas/voluntár
 - **`/content`** — textos institucionais mais longos (Sobre o Projeto, apresentação da Home, introdução do Contato), em Markdown.
 - **`/content/noticias`** — as notícias do site, **um arquivo Markdown por notícia**. Aparecem em `/noticias` e nas "Últimas notícias" da Home.
 - **`/public`** — imagens do site: logos em `/public/logos`, fotos de atletas em `/public/atletas`, fotos da galeria em `/public/galeria`.
+- **`/materiais-origem`** — arquivos brutos recebidos (`.docx` de biografias e notícias, fotos originais não otimizadas, PDFs de artigos, planilhas). **Nada aqui é lido pelo site** — é só o material de referência antes de virar conteúdo de verdade em `/data`, `/content` ou `/public`. Veja o [`README.md`](materiais-origem/README.md) dessa pasta para saber onde guardar cada tipo de arquivo.
 - **`/app`** e **`/components`** — o código do site. **Não edite estas pastas se você não souber programar** — um erro aqui pode quebrar o site inteiro.
 - **`/scripts`** — scripts pontuais já usados uma vez (migração da planilha de ranking, otimização dos logos). Não fazem parte do fluxo normal de atualização.
 
@@ -15,7 +16,9 @@ Guia rápido para quem vai manter este site — pensado para bolsistas/voluntár
 
 ### Como adicionar/editar um atleta (`data/atletas.json`)
 
-Abra o arquivo, encontre um bloco entre `{` e `}` (isso é um atleta) e edite os campos. Exemplo de um bloco **válido**:
+Se você recebeu o `.docx` com a biografia e a foto do atleta, salve uma cópia em `materiais-origem/atletas/nome-do-atleta/` antes de começar (veja o [README dessa pasta](materiais-origem/README.md)) — isso é só o arquivo-fonte, o site não lê de lá.
+
+Depois, abra `data/atletas.json`, encontre um bloco entre `{` e `}` (isso é um atleta) e edite os campos. Exemplo de um bloco **válido**:
 
 ```json
 {
@@ -67,35 +70,41 @@ O arquivo é uma lista de seções (uma por prova + naipe). Dentro de cada seç�
 
 Substitua os valores `null` pelos números reais quando a coordenação definir (ex: `"alunosAtendidos": 120`). Enquanto for `null`, o site mostra "—" no lugar do número.
 
-### Como adicionar uma notícia (`content/noticias/`)
+### Como adicionar uma notícia (`content/noticias/<slug>/`)
 
-Crie um arquivo novo em `content/noticias/`, com nome curto e sem espaço/acento (ex: `selecao-2026.md` — esse nome vira o endereço `/noticias/selecao-2026`). Comece com um bloco de metadados entre `---` e depois o texto da notícia em Markdown:
+Cada notícia é uma **pasta**, não um arquivo solto — assim o texto e as fotos dela ficam juntos e organizados. O nome da pasta (o `slug`) precisa ser curto e sem espaço/acento (ex: `selecao-2026` — vira o endereço `/noticias/selecao-2026`) e **precisa ser igual nos dois lugares abaixo**:
 
-```md
----
-titulo: "Título da notícia"
-data: "2026-09-10"
-resumo: "Um ou dois parágrafos curtos que aparecem no card da listagem e da Home."
-capa: "/galeria/foto-do-evento.jpg"
-capaAlt: "Descrição da foto para quem usa leitor de tela"
----
+1. **`content/noticias/<slug>/index.md`** — o texto da notícia. Comece com um bloco de metadados entre `---` e depois o texto em Markdown:
 
-Primeiro parágrafo da notícia.
+   ```md
+   ---
+   titulo: "Título da notícia"
+   data: "2026-09-10"
+   resumo: "Um ou dois parágrafos curtos que aparecem no card da listagem e da Home."
+   capa: "/noticias/selecao-2026/capa.jpg"
+   capaAlt: "Descrição da foto para quem usa leitor de tela"
+   ---
 
-## Um subtítulo, se precisar
+   Primeiro parágrafo da notícia.
 
-Mais texto. Pode usar **negrito**, listas com `- item` e parágrafos normais.
-```
+   ## Um subtítulo, se precisar
+
+   Mais texto. Pode usar **negrito**, listas com `- item` e parágrafos normais.
+
+   Para colocar mais fotos no meio do texto (além da capa), use `![Descrição da foto](/noticias/selecao-2026/foto-2.jpg)` em qualquer linha.
+   ```
+
+2. **`public/noticias/<slug>/`** — todas as fotos dessa notícia (a capa e qualquer foto usada no meio do texto), com o nome que você quiser (ex: `capa.jpg`, `foto-2.jpg`). É esse caminho, começando em `/noticias/...`, que você usa no `capa:` do frontmatter e nas imagens `![...](...)` do corpo.
 
 - `data` é sempre `"AAAA-MM-DD"` (entre aspas) — define a ordem das notícias (mais recente primeiro) e a data mostrada na página. Se ainda não tiver uma data definida, deixe `data: null` (sem aspas).
-- `capa` e `capaAlt` são opcionais — se não tiver uma foto ainda, apague as duas linhas (ou deixe `capa: null`) que a notícia aparece só com texto. Quando tiver a foto, coloque o arquivo em `/public/galeria` (ou outra pasta de imagens) e aponte `capa` para esse caminho.
-- Não é preciso registrar a notícia em nenhum outro lugar do site — qualquer arquivo `.md` dentro de `content/noticias` aparece automaticamente em `/noticias`.
-- Se alguém da coordenação mandar o texto em `.docx`, salve uma cópia do arquivo original em `/Noticias` (fora de `/content`) só como referência/arquivo-fonte, e transcreva o conteúdo para um `.md` novo em `content/noticias` seguindo o formato acima — o site nunca lê `.docx` diretamente.
+- `capa` e `capaAlt` são opcionais — se não tiver uma foto de capa ainda, apague as duas linhas (ou deixe `capa: null`) que a notícia aparece só com texto.
+- Não é preciso registrar a notícia em nenhum outro lugar do site — qualquer pasta com `index.md` dentro de `content/noticias` aparece automaticamente em `/noticias`.
+- Se alguém da coordenação mandar o texto em `.docx`, salve uma cópia do arquivo original em `materiais-origem/noticias` (fora de `/content`) só como referência/arquivo-fonte, e transcreva o conteúdo para o `index.md` seguindo o formato acima — o site nunca lê `.docx` diretamente.
 
 ### Adicionando fotos
 
-1. Coloque o arquivo de imagem em `/public/atletas` (foto de atleta) ou `/public/galeria` (foto da galeria). Prefira `.jpg` ou `.png`, largura de até ~1200px (fotos maiores deixam o site mais lento).
-2. No `data/atletas.json` ou `data/galeria.json`, aponte o campo `foto`/`src` para `/atletas/nome-do-arquivo.jpg` ou `/galeria/nome-do-arquivo.jpg`.
+1. Coloque o arquivo de imagem em `/public/atletas` (foto de atleta), `/public/galeria` (foto da galeria) ou `/public/noticias/<slug>` (fotos de uma notícia específica, ver seção acima). Prefira `.jpg` ou `.png`, largura de até ~1200px (fotos maiores deixam o site mais lento).
+2. Aponte para esse caminho no lugar certo: `foto` em `data/atletas.json`, `src` em `data/galeria.json`, ou `capa`/`![...]()` no `index.md` da notícia.
 
 ## Rodando o site no seu computador antes de publicar
 
