@@ -70,6 +70,8 @@ O arquivo é uma lista de seções (uma por prova + naipe). Dentro de cada seç�
 
 Substitua os valores `null` pelos números reais quando a coordenação definir (ex: `"alunosAtendidos": 120`). Enquanto for `null`, o site mostra "—" no lugar do número.
 
+O número de "Atletas na equipe" **não fica nesse arquivo** — é contado automaticamente a partir de quantos atletas existem em `data/atletas.json`. Ou seja: não precisa atualizar nada à parte quando adicionar ou remover um atleta em "Atletas Atuais", o número na Home já reflete isso sozinho.
+
 ### Como adicionar uma notícia (`content/noticias/<slug>/`)
 
 Cada notícia é uma **pasta**, não um arquivo solto — assim o texto e as fotos dela ficam juntos e organizados. O nome da pasta (o `slug`) precisa ser curto e sem espaço/acento (ex: `selecao-2026` — vira o endereço `/noticias/selecao-2026`) e **precisa ser igual nos dois lugares abaixo**:
