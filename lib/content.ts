@@ -3,7 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
-import type { Noticia, NoticiaMeta } from "./types";
+import type { FotoNoticia, Noticia, NoticiaMeta } from "./types";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const NOTICIAS_DIR = path.join(CONTENT_DIR, "noticias");
@@ -29,6 +29,18 @@ function readNoticiaFile(slug: string) {
   return matter(raw);
 }
 
+function toFotos(value: unknown): FotoNoticia[] {
+  if (!Array.isArray(value)) return [];
+
+  return value
+    .filter((item): item is Record<string, unknown> => typeof item === "object" && item !== null)
+    .map((item) => ({
+      src: typeof item.src === "string" ? item.src : "",
+      alt: typeof item.alt === "string" ? item.alt : "",
+    }))
+    .filter((foto) => foto.src !== "");
+}
+
 function toNoticiaMeta(slug: string, data: Record<string, unknown>): NoticiaMeta {
   return {
     slug,
@@ -37,6 +49,7 @@ function toNoticiaMeta(slug: string, data: Record<string, unknown>): NoticiaMeta
     resumo: typeof data.resumo === "string" ? data.resumo : "",
     capa: typeof data.capa === "string" ? data.capa : null,
     capaAlt: typeof data.capaAlt === "string" ? data.capaAlt : null,
+    fotos: toFotos(data.fotos),
   };
 }
 

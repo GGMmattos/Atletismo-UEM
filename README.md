@@ -94,7 +94,17 @@ Cada notícia é uma **pasta**, não um arquivo solto — assim o texto e as fot
    Para colocar mais fotos no meio do texto (além da capa), use `![Descrição da foto](/noticias/selecao-2026/foto-2.jpg)` em qualquer linha.
    ```
 
-2. **`public/noticias/<slug>/`** — todas as fotos dessa notícia (a capa e qualquer foto usada no meio do texto), com o nome que você quiser (ex: `capa.jpg`, `foto-2.jpg`). É esse caminho, começando em `/noticias/...`, que você usa no `capa:` do frontmatter e nas imagens `![...](...)` do corpo.
+   Se tiver **várias fotos do mesmo evento** (ex: fotos de uma formação, de uma competição), em vez de espalhar todas no meio do texto, coloque-as em `fotos:` no frontmatter — elas aparecem como um **carrossel** (com setas para passar de foto) no fim da notícia. `fotos` é opcional — se a notícia tiver só a foto de capa, não precisa dessa lista:
+
+   ```yaml
+   fotos:
+     - src: "/noticias/selecao-2026/foto-1.jpg"
+       alt: "Descrição da primeira foto"
+     - src: "/noticias/selecao-2026/foto-2.jpg"
+       alt: "Descrição da segunda foto"
+   ```
+
+2. **`public/noticias/<slug>/`** — todas as fotos dessa notícia (a capa e qualquer foto usada no meio do texto ou no `fotos:`), com o nome que você quiser (ex: `capa.jpg`, `foto-2.jpg`). É esse caminho, começando em `/noticias/...`, que você usa no `capa:` do frontmatter, no `fotos:` e nas imagens `![...](...)` do corpo.
 
 - `data` é sempre `"AAAA-MM-DD"` (entre aspas) — define a ordem das notícias (mais recente primeiro) e a data mostrada na página. Se ainda não tiver uma data definida, deixe `data: null` (sem aspas).
 - `capa` e `capaAlt` são opcionais — se não tiver uma foto de capa ainda, apague as duas linhas (ou deixe `capa: null`) que a notícia aparece só com texto.

@@ -65,6 +65,11 @@ export type Artigo = {
   doi: string;
 };
 
+export type FotoNoticia = {
+  src: string;
+  alt: string;
+};
+
 export type NoticiaMeta = {
   slug: string;
   titulo: string;
@@ -72,6 +77,8 @@ export type NoticiaMeta = {
   resumo: string;
   capa: string | null;
   capaAlt: string | null;
+  /** Fotos extras da notícia (além da capa), exibidas em carrossel na página da notícia. */
+  fotos: FotoNoticia[];
 };
 
 export type Noticia = NoticiaMeta & { html: string };
