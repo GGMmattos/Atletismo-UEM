@@ -24,7 +24,7 @@ export async function getContent(
 }
 
 function readNoticiaFile(slug: string) {
-  const filePath = path.join(NOTICIAS_DIR, `${slug}.md`);
+  const filePath = path.join(NOTICIAS_DIR, slug, "index.md");
   const raw = fs.readFileSync(filePath, "utf8");
   return matter(raw);
 }
@@ -40,14 +40,14 @@ function toNoticiaMeta(slug: string, data: Record<string, unknown>): NoticiaMeta
   };
 }
 
-/** Lista todas as notícias (`/content/noticias/*.md`), mais recente primeiro. */
+/** Lista todas as notícias (uma pasta por notícia em `/content/noticias/<slug>/index.md`), mais recente primeiro. */
 export function getAllNoticias(): NoticiaMeta[] {
   if (!fs.existsSync(NOTICIAS_DIR)) return [];
 
   return fs
-    .readdirSync(NOTICIAS_DIR)
-    .filter((file) => file.endsWith(".md"))
-    .map((file) => file.replace(/\.md$/, ""))
+    .readdirSync(NOTICIAS_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
     .map((slug) => toNoticiaMeta(slug, readNoticiaFile(slug).data))
     .sort((a, b) => (b.data ?? "").localeCompare(a.data ?? ""));
 }

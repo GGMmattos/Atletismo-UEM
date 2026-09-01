@@ -2,7 +2,7 @@
 titulo: "Atletismo UEM amplia atuação e consolida novas ações do projeto"
 data: "2026-08-23"
 resumo: "O projeto de extensão Atletismo UEM segue em atividade na Pista de Atletismo (N-19) e amplia seu alcance com novas frentes de atuação voltadas à comunidade externa: Escola na Pista e a categoria Master."
-capa: "/noticias/atletismo-uem-amplia-atuacao.jpg"
+capa: "/noticias/atletismo-uem-amplia-atuacao/capa.jpg"
 capaAlt: "Alunos de escola pública comemorando com medalhas na Pista de Atletismo da UEM, ao lado de integrantes do projeto Atletismo UEM"
 ---
 
