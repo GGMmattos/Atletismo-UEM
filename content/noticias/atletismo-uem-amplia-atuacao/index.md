@@ -1,4 +1,5 @@
 ---
+id: 1
 titulo: "Atletismo UEM amplia atuação e consolida novas ações do projeto"
 data: "2026-08-23"
 resumo: "O projeto de extensão Atletismo UEM segue em atividade na Pista de Atletismo (N-19) e amplia seu alcance com novas frentes de atuação voltadas à comunidade externa: Escola na Pista e a categoria Master."
@@ -10,7 +11,7 @@ O projeto de extensão Atletismo UEM: Aprendizagem, Ensino e Treinamento, coorde
 
 ## Sobre o projeto
 
-Vinculado à disciplina de Esportes de Marca e integrado às ações de curricularização da extensão, o projeto nasceu com o objetivo de oferecer à comunidade universitária um processo estruturado de aprendizagem, ensino e treinamento em atletismo — modalidade reconhecida como "esporte base" por desenvolver habilidades fundamentais para a prática de diversos outros esportes.
+Vinculado à disciplina de Esportes de Marca e integrado às ações de curricularização da extensão, o projeto nasceu com o objetivo de oferecer à comunidade universitária um processo estruturado de aprendizagem, ensino e treinamento em atletismo, modalidade reconhecida como "esporte base" por desenvolver habilidades fundamentais para a prática de diversos outros esportes.
 
 ## As ações do projeto
 

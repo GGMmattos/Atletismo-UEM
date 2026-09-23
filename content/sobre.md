@@ -4,7 +4,7 @@ titulo: "Sobre o Projeto"
 
 ## História e objetivos
 
-O Atletismo UEM: Aprendizagem, Ensino e Treinamento nasceu para ampliar o acesso a uma modalidade essencial para o desenvolvimento integral do ser humano. As primeiras ações, no contexto pós-pandemia, atenderam à comunidade universitária da UEM — a maior parte dos participantes iniciou no atletismo de forma tardia, sem experiência prévia com a modalidade.
+O Atletismo UEM: Aprendizagem, Ensino e Treinamento nasceu para ampliar o acesso a uma modalidade essencial para o desenvolvimento integral do ser humano. As primeiras ações, no contexto pós-pandemia, atenderam à comunidade universitária da UEM, a maior parte dos participantes iniciou no atletismo de forma tardia, sem experiência prévia com a modalidade.
 
 Com o crescimento da procura, o projeto já reuniu 40 alunos nos treinamentos. Nos Jogos Universitários do Paraná (JUPs), mais da metade dos atletas formados pelo projeto conquistou a primeira colocação em 2023 e a segunda em 2024, tanto no feminino quanto no masculino. A equipe também representou a UEM fora do ambiente universitário, no Torneio FAP IV (Cascavel-PR, 2023), no Centro Nacional de Treinamento de Atletismo, e no Troféu Adhemar Ferreira da Silva Loterias Caixa de Atletismo, na sede da Confederação Brasileira de Atletismo (Bragança Paulista-SP, 2024), onde conquistou o título por equipes no feminino, no masculino e no geral.
 

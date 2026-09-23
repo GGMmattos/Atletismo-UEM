@@ -17,7 +17,7 @@ export default function ArtigosPage() {
     <Section title="Artigos Científicos">
       <p className="mb-8 max-w-3xl text-uem-black/70">
         Além do trabalho na pista, o Atletismo UEM também é um projeto de extensão universitária: parte do
-        conteúdo produzido aqui vira pesquisa. Os artigos abaixo foram feitos em parceria com o projeto —
+        conteúdo produzido aqui vira pesquisa. Os artigos abaixo foram feitos em parceria com o projeto,
         vários deles por atletas atuais ou ex-atletas da equipe.
       </p>
 

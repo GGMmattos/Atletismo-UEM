@@ -21,7 +21,7 @@ export default function EscolaNaPistaPage() {
             atletas da UEM.
           </p>
           <p className="mt-3 text-sm text-uem-white/60">
-            Preencha os dados abaixo com atenção — eles são usados para confirmar data, organizar a atividade e
+            Preencha os dados abaixo com atenção, eles são usados para confirmar data, organizar a atividade e
             receber o grupo com segurança.
           </p>
         </div>

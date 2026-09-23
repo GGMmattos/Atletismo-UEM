@@ -70,6 +70,8 @@ O arquivo é uma lista de seções (uma por prova + naipe). Dentro de cada seç�
 
 Substitua os valores `null` pelos números reais quando a coordenação definir (ex: `"alunosAtendidos": 120`). Enquanto for `null`, o site mostra "—" no lugar do número.
 
+O número de "Atletas na equipe" **não fica nesse arquivo** — é contado automaticamente a partir de quantos atletas existem em `data/atletas.json`. Ou seja: não precisa atualizar nada à parte quando adicionar ou remover um atleta em "Atletas Atuais", o número na Home já reflete isso sozinho.
+
 ### Como adicionar uma notícia (`content/noticias/<slug>/`)
 
 Cada notícia é uma **pasta**, não um arquivo solto — assim o texto e as fotos dela ficam juntos e organizados. O nome da pasta (o `slug`) precisa ser curto e sem espaço/acento (ex: `selecao-2026` — vira o endereço `/noticias/selecao-2026`) e **precisa ser igual nos dois lugares abaixo**:
@@ -78,6 +80,7 @@ Cada notícia é uma **pasta**, não um arquivo solto — assim o texto e as fot
 
    ```md
    ---
+   id: 4
    titulo: "Título da notícia"
    data: "2026-09-10"
    resumo: "Um ou dois parágrafos curtos que aparecem no card da listagem e da Home."
@@ -94,8 +97,19 @@ Cada notícia é uma **pasta**, não um arquivo solto — assim o texto e as fot
    Para colocar mais fotos no meio do texto (além da capa), use `![Descrição da foto](/noticias/selecao-2026/foto-2.jpg)` em qualquer linha.
    ```
 
-2. **`public/noticias/<slug>/`** — todas as fotos dessa notícia (a capa e qualquer foto usada no meio do texto), com o nome que você quiser (ex: `capa.jpg`, `foto-2.jpg`). É esse caminho, começando em `/noticias/...`, que você usa no `capa:` do frontmatter e nas imagens `![...](...)` do corpo.
+   Se tiver **várias fotos do mesmo evento** (ex: fotos de uma formação, de uma competição), em vez de espalhar todas no meio do texto, coloque-as em `fotos:` no frontmatter — elas aparecem como um **carrossel** (com setas para passar de foto) no fim da notícia. `fotos` é opcional — se a notícia tiver só a foto de capa, não precisa dessa lista:
 
+   ```yaml
+   fotos:
+     - src: "/noticias/selecao-2026/foto-1.jpg"
+       alt: "Descrição da primeira foto"
+     - src: "/noticias/selecao-2026/foto-2.jpg"
+       alt: "Descrição da segunda foto"
+   ```
+
+2. **`public/noticias/<slug>/`** — todas as fotos dessa notícia (a capa e qualquer foto usada no meio do texto ou no `fotos:`), com o nome que você quiser (ex: `capa.jpg`, `foto-2.jpg`). É esse caminho, começando em `/noticias/...`, que você usa no `capa:` do frontmatter, no `fotos:` e nas imagens `![...](...)` do corpo.
+
+- `id` é um número sequencial só para controle interno da equipe (não aparece no site) — use o próximo número disponível, olhando o maior `id` já usado nas notícias existentes em `content/noticias` e somando 1.
 - `data` é sempre `"AAAA-MM-DD"` (entre aspas) — define a ordem das notícias (mais recente primeiro) e a data mostrada na página. Se ainda não tiver uma data definida, deixe `data: null` (sem aspas).
 - `capa` e `capaAlt` são opcionais — se não tiver uma foto de capa ainda, apague as duas linhas (ou deixe `capa: null`) que a notícia aparece só com texto.
 - Não é preciso registrar a notícia em nenhum outro lugar do site — qualquer pasta com `index.md` dentro de `content/noticias` aparece automaticamente em `/noticias`.

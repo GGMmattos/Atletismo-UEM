@@ -33,7 +33,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-white/50">
-        Projeto de extensão — Universidade Estadual de Maringá (UEM)
+        Projeto de extensão, Universidade Estadual de Maringá (UEM)
       </div>
 
       <div className="border-t border-white/10 px-4 py-3 text-center text-xs text-white/50">

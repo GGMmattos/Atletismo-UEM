@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import FotoEnquadrada from "@/components/FotoEnquadrada";
 import { notFound } from "next/navigation";
 import Markdown from "@/components/Markdown";
+import NoticiaCarrossel from "@/components/NoticiaCarrossel";
 import Section from "@/components/Section";
 import { getAllNoticias, getNoticia } from "@/lib/content";
 import { formatarData } from "@/lib/format";
@@ -43,7 +44,7 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
       <article className="mx-auto max-w-3xl">
         {noticia.capa && (
           <div className="relative mb-6 aspect-video overflow-hidden rounded-lg bg-uem-black">
-            <Image src={noticia.capa} alt={noticia.capaAlt ?? ""} fill className="object-cover" />
+            <FotoEnquadrada src={noticia.capa} alt={noticia.capaAlt ?? ""} />
           </div>
         )}
         <h1 className="text-2xl font-bold sm:text-3xl">{noticia.titulo}</h1>
@@ -53,6 +54,13 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
         <div className="mt-6">
           <Markdown html={noticia.html} />
         </div>
+
+        {noticia.fotos.length > 0 && (
+          <>
+            <h2 className="mt-8 text-xl font-bold text-uem-black">Fotos</h2>
+            <NoticiaCarrossel fotos={noticia.fotos} />
+          </>
+        )}
 
         {(SITE.emailInstitucional || SITE.telefone) && (
           <p className="mt-8 border-t border-uem-black/10 pt-6 text-sm text-uem-black/70">

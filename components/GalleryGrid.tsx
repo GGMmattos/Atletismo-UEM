@@ -172,7 +172,7 @@ export default function GalleryGrid({ fotos }: { fotos: FotoGaleria[] }) {
           </div>
 
           <p className="absolute bottom-3 left-1/2 -translate-x-1/2 text-sm text-uem-white/80 sm:bottom-6">
-            {foto.alt} — {activeIndex! + 1} / {fotos.length}
+            {foto.alt}, {activeIndex! + 1} / {fotos.length}
           </p>
         </div>
       )}

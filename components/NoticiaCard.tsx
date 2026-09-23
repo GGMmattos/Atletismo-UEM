@@ -1,4 +1,4 @@
-import Image from "next/image";
+import FotoEnquadrada from "@/components/FotoEnquadrada";
 import Link from "next/link";
 import { formatarData } from "@/lib/format";
 import type { NoticiaMeta } from "@/lib/types";
@@ -10,8 +10,8 @@ export default function NoticiaCard({ noticia }: { noticia: NoticiaMeta }) {
       className="block overflow-hidden rounded-lg border border-uem-black/10 transition-shadow hover:shadow-lg"
     >
       {noticia.capa && (
-        <div className="relative aspect-video bg-uem-black">
-          <Image src={noticia.capa} alt={noticia.capaAlt ?? ""} fill className="object-cover" />
+        <div className="relative aspect-video overflow-hidden bg-uem-black">
+          <FotoEnquadrada src={noticia.capa} alt={noticia.capaAlt ?? ""} />
         </div>
       )}
       <div className="p-5">

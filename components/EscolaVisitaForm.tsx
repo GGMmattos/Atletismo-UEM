@@ -328,7 +328,7 @@ export default function EscolaVisitaForm() {
       <LaneSection
         number="05"
         title="O que a turma quer vivenciar"
-        subtitle="Selecione o que mais interessa ao grupo — a equipe monta o roteiro da visita com base nisso."
+        subtitle="Selecione o que mais interessa ao grupo, a equipe monta o roteiro da visita com base nisso."
       >
         <fieldset>
           <legend className="mb-2 text-sm font-medium text-uem-black">Modalidades de interesse</legend>
@@ -391,7 +391,7 @@ export default function EscolaVisitaForm() {
       </LaneSection>
 
       <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
-      <input type="hidden" name="_subject" value="Nova solicitação de visita — Escola na Pista" />
+      <input type="hidden" name="_subject" value="Nova solicitação de visita, Escola na Pista" />
 
       <div className="flex flex-col gap-4 border-t border-uem-black/10 px-5 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-8">
         <p className="max-w-sm text-xs text-uem-black/60">

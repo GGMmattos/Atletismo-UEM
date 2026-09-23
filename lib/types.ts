@@ -65,13 +65,22 @@ export type Artigo = {
   doi: string;
 };
 
+export type FotoNoticia = {
+  src: string;
+  alt: string;
+};
+
 export type NoticiaMeta = {
+  /** Identificador numérico sequencial da notícia, só para controle interno (não aparece no site). */
+  id: number;
   slug: string;
   titulo: string;
   data: string | null;
   resumo: string;
   capa: string | null;
   capaAlt: string | null;
+  /** Fotos extras da notícia (além da capa), exibidas em carrossel na página da notícia. */
+  fotos: FotoNoticia[];
 };
 
 export type Noticia = NoticiaMeta & { html: string };

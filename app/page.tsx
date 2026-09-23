@@ -4,7 +4,14 @@ import { getAllNoticias, getContent } from "@/lib/content";
 import ImpactoStats from "@/components/ImpactoStats";
 import NoticiaCard from "@/components/NoticiaCard";
 import Section from "@/components/Section";
-import impacto from "@/data/impacto.json";
+import type { Impacto } from "@/lib/types";
+import impactoBase from "@/data/impacto.json";
+import atletas from "@/data/atletas.json";
+
+// "Atletas na equipe" não é editado à mão em data/impacto.json: conta direto
+// data/atletas.json, para nunca ficar desatualizado quando um atleta é
+// adicionado ou removido em "Atletas Atuais".
+const impacto: Impacto = { ...impactoBase, atletasNaEquipe: atletas.length };
 
 const FRENTES = [
   {
