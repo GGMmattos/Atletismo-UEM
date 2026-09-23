@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Image from "next/image";
+import FotoEnquadrada from "@/components/FotoEnquadrada";
 import type { FotoNoticia } from "@/lib/types";
 
 export default function NoticiaCarrossel({ fotos }: { fotos: FotoNoticia[] }) {
@@ -39,7 +39,7 @@ export default function NoticiaCarrossel({ fotos }: { fotos: FotoNoticia[] }) {
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <Image src={foto.src} alt={foto.alt} fill className="object-cover" />
+        <FotoEnquadrada src={foto.src} alt={foto.alt} />
 
         {fotos.length > 1 && (
           <>

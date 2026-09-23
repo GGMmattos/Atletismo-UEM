@@ -67,7 +67,7 @@ export default function RankingTable({ secoes }: { secoes: SecaoRanking[] }) {
         {secoesFiltradas.map((secao) => (
           <div key={`${secao.prova}-${secao.naipe}`}>
             <h3 className="mb-3 text-lg font-semibold">
-              {secao.prova} — {NAIPE_LABELS[secao.naipe] ?? secao.naipe}
+              {secao.prova}, {NAIPE_LABELS[secao.naipe] ?? secao.naipe}
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[480px] border-collapse text-sm">

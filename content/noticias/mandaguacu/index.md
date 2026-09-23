@@ -1,4 +1,5 @@
 ---
+id: 2
 titulo: "Atletismo-UEM realiza formação continuada para professores de Mandaguaçu-PR"
 data: "2026-08-26"
 resumo: "O Atletismo-UEM conduziu o processo pedagógico de uma formação continuada para professores de Educação Física da rede municipal de Mandaguaçu-PR, com vivências práticas sobre o ensino do atletismo na escola."
@@ -21,7 +22,7 @@ fotos:
 
 O Atletismo-UEM foi o responsável pelo processo pedagógico de mais uma formação continuada para professores de Educação Física, dessa vez em Mandaguaçu-PR. O curso reuniu professores da rede municipal em momentos de aprendizado, troca de experiências e vivências práticas.
 
-A Prefeitura Municipal de Mandaguaçu, por meio da Secretaria Municipal de Educação e Cultura, realizou, na quarta-feira (26/08/2026), a ação de Formação Continuada voltada aos professores de Educação Física da rede municipal de ensino, com o atletismo e suas possibilidades de aplicação no ambiente escolar como tema central — conteúdo que, no planejamento da rede, deve ser abordado no 3º trimestre para os alunos do 2º ano do fundamental (anos iniciais).
+A Prefeitura Municipal de Mandaguaçu, por meio da Secretaria Municipal de Educação e Cultura, realizou, na quarta-feira (26/08/2026), a ação de Formação Continuada voltada aos professores de Educação Física da rede municipal de ensino, com o atletismo e suas possibilidades de aplicação no ambiente escolar como tema central, conteúdo que, no planejamento da rede, deve ser abordado no 3º trimestre para os alunos do 2º ano do fundamental (anos iniciais).
 
 ## Aprendizado e troca de experiências
 
@@ -35,4 +36,4 @@ Além do aperfeiçoamento de técnicas e conhecimentos específicos do atletismo
 
 A ação reforça a importância de aproximar a formação dos professores das práticas esportivas, possibilitando que o atletismo seja explorado de maneira mais diversificada e significativa nas aulas de Educação Física.
 
-*Texto: Analicy Gabriel, Emilly Canelo, Giulia Tamanini, Nátaly Alves — Revisão: Jeferson Rojo*
+*Texto: Analicy Gabriel, Emilly Canelo, Giulia Tamanini, Nátaly Alves, Revisão: Jeferson Rojo*

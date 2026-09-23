@@ -80,6 +80,7 @@ Cada notícia é uma **pasta**, não um arquivo solto — assim o texto e as fot
 
    ```md
    ---
+   id: 4
    titulo: "Título da notícia"
    data: "2026-09-10"
    resumo: "Um ou dois parágrafos curtos que aparecem no card da listagem e da Home."
@@ -108,6 +109,7 @@ Cada notícia é uma **pasta**, não um arquivo solto — assim o texto e as fot
 
 2. **`public/noticias/<slug>/`** — todas as fotos dessa notícia (a capa e qualquer foto usada no meio do texto ou no `fotos:`), com o nome que você quiser (ex: `capa.jpg`, `foto-2.jpg`). É esse caminho, começando em `/noticias/...`, que você usa no `capa:` do frontmatter, no `fotos:` e nas imagens `![...](...)` do corpo.
 
+- `id` é um número sequencial só para controle interno da equipe (não aparece no site) — use o próximo número disponível, olhando o maior `id` já usado nas notícias existentes em `content/noticias` e somando 1.
 - `data` é sempre `"AAAA-MM-DD"` (entre aspas) — define a ordem das notícias (mais recente primeiro) e a data mostrada na página. Se ainda não tiver uma data definida, deixe `data: null` (sem aspas).
 - `capa` e `capaAlt` são opcionais — se não tiver uma foto de capa ainda, apague as duas linhas (ou deixe `capa: null`) que a notícia aparece só com texto.
 - Não é preciso registrar a notícia em nenhum outro lugar do site — qualquer pasta com `index.md` dentro de `content/noticias` aparece automaticamente em `/noticias`.

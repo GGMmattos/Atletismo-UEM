@@ -71,6 +71,8 @@ export type FotoNoticia = {
 };
 
 export type NoticiaMeta = {
+  /** Identificador numérico sequencial da notícia, só para controle interno (não aparece no site). */
+  id: number;
   slug: string;
   titulo: string;
   data: string | null;

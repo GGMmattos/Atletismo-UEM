@@ -43,6 +43,7 @@ function toFotos(value: unknown): FotoNoticia[] {
 
 function toNoticiaMeta(slug: string, data: Record<string, unknown>): NoticiaMeta {
   return {
+    id: typeof data.id === "number" ? data.id : 0,
     slug,
     titulo: typeof data.titulo === "string" ? data.titulo : "",
     data: typeof data.data === "string" ? data.data : null,
