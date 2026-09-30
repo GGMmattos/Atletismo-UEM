@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import FotoEnquadrada from "@/components/FotoEnquadrada";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Markdown from "@/components/Markdown";
 import NoticiaCarrossel from "@/components/NoticiaCarrossel";
@@ -43,9 +43,14 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
     <Section>
       <article className="mx-auto max-w-3xl">
         {noticia.capa && (
-          <div className="relative mb-6 aspect-video overflow-hidden rounded-lg bg-uem-black">
-            <FotoEnquadrada src={noticia.capa} alt={noticia.capaAlt ?? ""} />
-          </div>
+          <Image
+            src={noticia.capa}
+            alt={noticia.capaAlt ?? ""}
+            width={1200}
+            height={1200}
+            priority
+            className="mx-auto mb-6 h-auto max-h-[70vh] w-auto max-w-full rounded-lg"
+          />
         )}
         <h1 className="text-2xl font-bold sm:text-3xl">{noticia.titulo}</h1>
         {noticia.data && (
