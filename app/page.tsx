@@ -18,7 +18,10 @@ const impacto: Impacto = { ...impactoBase, atletasNaEquipe: atletas.length };
 const CONQUISTAS = [
   { ano: "2023", titulo: "Campeã dos Jogos Universitários do Paraná (JUPs)" },
   { ano: "2024", titulo: "Vice-campeã dos Jogos Universitários do Paraná (JUPs)" },
-  { ano: "2024", titulo: "Título por equipes no Troféu Adhemar Ferreira da Silva, Bragança Paulista-SP" },
+  {
+    ano: "2024",
+    titulo: "Campeã por equipes (feminino, masculino e geral) no Troféu Adhemar Ferreira da Silva, Bragança Paulista-SP",
+  },
 ];
 
 function Seta() {
