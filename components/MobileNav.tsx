@@ -2,9 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { NAV_ITEMS } from "@/lib/nav";
+import { isAtivo } from "@/components/NavLinks";
 
 export default function MobileNav() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -40,41 +43,53 @@ export default function MobileNav() {
     };
   }, [open]);
 
+  // As três linhas do ícone viram um "X" (em vez de trocar de ícone de uma vez).
+  const linha = "absolute left-0 h-0.5 w-full rounded-full bg-current transition-transform duration-300 ease-out-strong";
+
   return (
-    <div className="md:hidden" ref={containerRef}>
+    <div className="lg:hidden" ref={containerRef}>
       <button
         ref={buttonRef}
         type="button"
         aria-expanded={open}
         aria-controls="menu-mobile"
         onClick={() => setOpen((v) => !v)}
-        className="p-2 text-uem-white"
+        className="rounded-full p-3 text-uem-white transition-transform duration-150 active:scale-[0.94]"
       >
         <span className="sr-only">{open ? "Fechar menu" : "Abrir menu"}</span>
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          {open ? (
-            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          ) : (
-            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          )}
-        </svg>
+        <span aria-hidden="true" className="relative block h-4 w-5">
+          <span className={`${linha} top-0 ${open ? "translate-y-[7px] rotate-45" : ""}`} />
+          <span className={`${linha} top-[7px] ${open ? "scale-x-0" : ""}`} />
+          <span className={`${linha} top-[14px] ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
+        </span>
       </button>
 
       {open && (
-        <nav id="menu-mobile" aria-label="Menu principal" className="absolute inset-x-0 top-full bg-uem-black">
-          <ul className="flex flex-col divide-y divide-white/10 px-4 py-2">
-            {NAV_ITEMS.map((item, i) => (
-              <li key={item.href}>
-                <Link
-                  ref={i === 0 ? firstLinkRef : undefined}
-                  href={item.href}
-                  onClick={close}
-                  className="block py-3 text-uem-white hover:text-uem-green"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+        <nav
+          id="menu-mobile"
+          aria-label="Menu principal"
+          className="absolute inset-x-0 top-full border-t border-white/10 bg-uem-black shadow-[0_24px_48px_-12px_rgba(0,0,0,0.5)] transition-[opacity,transform] duration-200 ease-out-strong starting:-translate-y-2 starting:opacity-0"
+        >
+          <ul className="flex flex-col px-4 py-3">
+            {NAV_ITEMS.map((item, i) => {
+              const ativo = isAtivo(pathname, item.href);
+              return (
+                <li key={item.href}>
+                  <Link
+                    ref={i === 0 ? firstLinkRef : undefined}
+                    href={item.href}
+                    onClick={close}
+                    aria-current={ativo ? "page" : undefined}
+                    className={`flex items-center justify-between rounded-lg px-3 py-3 font-display text-2xl font-semibold uppercase tracking-tight transition-colors ${
+                      ativo ? "bg-uem-white/10 text-uem-white" : "text-uem-white/80 active:bg-uem-white/5"
+                    }`}
+                  >
+                    {item.label}
+                    {ativo && <span aria-hidden="true" className="h-2 w-2 rounded-full bg-uem-green" />}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       )}

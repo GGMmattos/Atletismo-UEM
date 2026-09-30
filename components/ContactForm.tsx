@@ -57,7 +57,7 @@ export default function ContactForm() {
           name="name"
           type="text"
           required
-          className="rounded border border-uem-black/20 px-3 py-2"
+          className="rounded-xl border border-uem-black/15 bg-uem-white px-3.5 py-2.5 transition-colors hover:border-uem-black/30"
         />
       </div>
 
@@ -70,7 +70,7 @@ export default function ContactForm() {
           name="email"
           type="email"
           required
-          className="rounded border border-uem-black/20 px-3 py-2"
+          className="rounded-xl border border-uem-black/15 bg-uem-white px-3.5 py-2.5 transition-colors hover:border-uem-black/30"
         />
       </div>
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="rounded border border-uem-black/20 px-3 py-2"
+          className="rounded-xl border border-uem-black/15 bg-uem-white px-3.5 py-2.5 transition-colors hover:border-uem-black/30"
         />
       </div>
 
@@ -93,14 +93,14 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-fit rounded bg-uem-green-deep px-6 py-2 font-medium text-uem-white transition-opacity hover:opacity-90 disabled:opacity-50"
+        className="w-fit rounded-full bg-uem-green-deep px-6 py-3 font-medium text-uem-white transition-[background-color,transform] duration-200 ease-out-strong hover:bg-[#005c32] active:scale-[0.97] disabled:opacity-50"
       >
         {status === "submitting" ? "Enviando..." : "Enviar mensagem"}
       </button>
 
       <div aria-live="polite">
         {status === "success" && (
-          <p className="text-green-700">Mensagem enviada com sucesso! Em breve entraremos em contato.</p>
+          <p className="font-medium text-uem-green-deep">Mensagem enviada. Em breve entraremos em contato.</p>
         )}
         {status === "error" && (
           <p className="text-uem-red-deep">

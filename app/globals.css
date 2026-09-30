@@ -28,7 +28,17 @@
   --color-uem-red: #ee2e3c;
   --color-uem-red-deep: #b71c2b;
   --color-uem-white: #ffffff;
-  --font-sans: var(--font-inter);
+  /* Superfície neutra levemente esverdeada, para faixas e cards sobre o fundo branco
+     (substitui o cinza puro bg-uem-black/5, que ficava "sujo" ao lado do verde da marca). */
+  --color-uem-surface: #f3f6f4;
+  --font-sans: var(--font-geist);
+  /* Fonte condensada só para títulos: lembra placar/numeração de pista e dá presença sem
+     precisar aumentar muito o tamanho. */
+  --font-display: var(--font-barlow-condensed);
+  /* Curvas de animação mais firmes que as do CSS padrão (ease-out forte para entradas e
+     respostas a clique; ease-in-out forte para movimento na tela). */
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 body {
@@ -36,9 +46,43 @@ body {
   color: var(--foreground);
 }
 
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
 :focus-visible {
   /* uem-green (vivo) não passa em 3:1 sobre fundo claro — ver comentário acima — por isso o
      anel de foco global usa a versão -deep, que passa em ambos os contextos (claro e escuro). */
   outline: 2px solid var(--color-uem-green-deep);
   outline-offset: 2px;
+}
+
+/* Entrada suave dos blocos conforme entram na tela, ligada à rolagem (sem JavaScript).
+   Navegadores sem suporte a animation-timeline simplesmente mostram tudo parado, e quem
+   pediu menos movimento no sistema não vê animação nenhuma. */
+@keyframes revelar {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @supports (animation-timeline: view()) {
+    .revelar {
+      animation: revelar linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
 }

@@ -77,13 +77,13 @@ export default function GalleryGrid({ fotos }: { fotos: FotoGaleria[] }) {
             }}
             onClick={() => setActiveIndex(i)}
             aria-label={`Ampliar foto: ${f.alt}`}
-            className="group relative aspect-[3/2] overflow-hidden rounded bg-uem-black"
+            className="group relative aspect-[3/2] overflow-hidden rounded-xl bg-uem-black transition-transform duration-150 ease-out-strong active:scale-[0.98]"
           >
             <Image
               src={f.src}
               alt={f.alt}
               fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              className="object-cover transition-transform duration-500 ease-out-strong group-hover:scale-[1.04]"
             />
             <span className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors duration-200 group-hover:bg-black/30">
               <svg

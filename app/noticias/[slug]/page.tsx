@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import Markdown from "@/components/Markdown";
 import NoticiaCarrossel from "@/components/NoticiaCarrossel";
@@ -42,6 +43,22 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
   return (
     <Section>
       <article className="mx-auto max-w-3xl">
+        <Link
+          href="/noticias"
+          className="group mb-6 inline-flex items-center gap-1.5 text-sm font-medium text-uem-green-deep"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+            className="transition-transform duration-200 ease-out-strong group-hover:-translate-x-0.5"
+          >
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          Notícias
+        </Link>
         {noticia.capa && (
           <Image
             src={noticia.capa}
@@ -49,20 +66,24 @@ export default async function NoticiaPage({ params }: { params: Promise<{ slug: 
             width={1200}
             height={1200}
             priority
-            className="mx-auto mb-6 h-auto max-h-[70vh] w-auto max-w-full rounded-lg"
+            className="mx-auto mb-8 block h-auto max-h-[70vh] w-auto max-w-full rounded-2xl"
           />
         )}
-        <h1 className="text-2xl font-bold sm:text-3xl">{noticia.titulo}</h1>
         {noticia.data && (
-          <p className="mt-2 text-sm text-uem-black/50">{formatarData(noticia.data)}</p>
+          <p className="text-xs font-medium uppercase tracking-[0.14em] text-uem-green-deep">
+            {formatarData(noticia.data)}
+          </p>
         )}
-        <div className="mt-6">
+        <h1 className="mt-2 font-display text-4xl font-bold uppercase leading-[0.95] tracking-tight sm:text-5xl">
+          {noticia.titulo}
+        </h1>
+        <div className="mt-8">
           <Markdown html={noticia.html} />
         </div>
 
         {noticia.fotos.length > 0 && (
           <>
-            <h2 className="mt-8 text-xl font-bold text-uem-black">Fotos</h2>
+            <h2 className="mt-12 font-display text-3xl font-bold uppercase tracking-tight">Fotos</h2>
             <NoticiaCarrossel fotos={noticia.fotos} />
           </>
         )}

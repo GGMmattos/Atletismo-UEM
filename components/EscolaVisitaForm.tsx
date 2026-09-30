@@ -7,7 +7,7 @@ type Status = "idle" | "submitting" | "success" | "error";
 const FORMSPREE_ESCOLA_ID = process.env.NEXT_PUBLIC_FORMSPREE_ESCOLA_ID;
 
 const inputClass =
-  "w-full rounded border border-uem-black/20 bg-white px-3 py-2.5 text-sm text-uem-black";
+  "w-full rounded-xl border border-uem-black/15 bg-white px-3.5 py-2.5 text-sm text-uem-black transition-colors hover:border-uem-black/30";
 
 function Field({
   label,
@@ -400,7 +400,7 @@ export default function EscolaVisitaForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="w-full rounded bg-uem-green-deep px-8 py-3 text-sm font-bold uppercase tracking-wide text-uem-white transition-opacity hover:opacity-90 disabled:opacity-50 sm:w-auto"
+          className="w-full rounded-full bg-uem-green-deep px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-uem-white transition-[background-color,transform] duration-200 ease-out-strong hover:bg-[#005c32] active:scale-[0.97] disabled:opacity-50 sm:w-auto"
         >
           {status === "submitting" ? "Enviando..." : "Solicitar agendamento"}
         </button>
