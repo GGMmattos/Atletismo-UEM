@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import RankingTable from "@/components/RankingTable";
+import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import type { SecaoRanking } from "@/lib/types";
 import ranking from "@/data/ranking.json";
@@ -13,8 +14,11 @@ export default function RankingPage() {
   const secoes = ranking as SecaoRanking[];
 
   return (
-    <Section title="Ranking de Marcas Históricas">
-      <RankingTable secoes={secoes} />
-    </Section>
+    <>
+      <PageHeader title="Ranking de Marcas Históricas" voltar={{ href: "/atletismo-universitario", label: "Atletismo Universitário" }} />
+      <Section>
+        <RankingTable secoes={secoes} />
+      </Section>
+    </>
   );
 }

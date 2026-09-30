@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import ArtigoCard from "@/components/ArtigoCard";
 import type { Artigo } from "@/lib/types";
@@ -14,12 +15,15 @@ export default function ArtigosPage() {
   const lista = artigos as Artigo[];
 
   return (
-    <Section title="Artigos Científicos">
-      <p className="mb-8 max-w-3xl text-uem-black/70">
-        Além do trabalho na pista, o Atletismo UEM também é um projeto de extensão universitária: parte do
-        conteúdo produzido aqui vira pesquisa. Os artigos abaixo foram feitos em parceria com o projeto,
-        vários deles por atletas atuais ou ex-atletas da equipe.
-      </p>
+    <>
+      <PageHeader title="Artigos Científicos" eyebrow="Pesquisa">
+        <p>
+          Além do trabalho na pista, o Atletismo UEM também é um projeto de extensão universitária: parte do
+          conteúdo produzido aqui vira pesquisa. Os artigos abaixo foram feitos em parceria com o projeto,
+          vários deles por atletas atuais ou ex-atletas da equipe.
+        </p>
+      </PageHeader>
+      <Section>
 
       {lista.length === 0 ? (
         <p className="text-uem-black/70">Nenhum artigo publicado ainda.</p>
@@ -30,6 +34,7 @@ export default function ArtigosPage() {
           ))}
         </div>
       )}
-    </Section>
+      </Section>
+    </>
   );
 }

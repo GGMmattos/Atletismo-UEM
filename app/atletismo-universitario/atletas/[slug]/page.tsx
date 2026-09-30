@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import type { Atleta } from "@/lib/types";
 import atletas from "@/data/atletas.json";
@@ -35,32 +36,54 @@ export default async function AtletaPage({ params }: { params: Promise<{ slug: s
   if (!atleta) notFound();
 
   return (
-    <Section>
-      <div className="grid gap-8 sm:grid-cols-[240px_1fr]">
-        <div className="relative aspect-square overflow-hidden rounded-lg bg-uem-black">
-          <Image src={atleta.foto} alt={`Foto de ${atleta.nome}`} fill className="object-cover" />
-        </div>
-        <div>
-          <h1 className="text-2xl font-bold">{atleta.nome}</h1>
-          <p className="mt-1 text-uem-black/70">{atleta.provas.join(", ")}</p>
-          <p className="mt-1 font-medium text-uem-green-deep">Melhor marca: {atleta.melhorMarca}</p>
-          <div className="mt-4 space-y-4">
-            {atleta.bioCompleta.split("\n\n").map((paragrafo, i) => (
-              <p key={i}>{paragrafo}</p>
-            ))}
+    <>
+      <PageHeader title={atleta.nome} voltar={{ href: "/atletismo-universitario/atletas", label: "Atletas Atuais" }}>
+        <p>{atleta.provas.join(", ")}</p>
+      </PageHeader>
+      <Section>
+        <div className="grid gap-10 md:grid-cols-[320px_1fr] lg:gap-16">
+          <div className="flex flex-col gap-4">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-uem-black">
+              <Image
+                src={atleta.foto}
+                alt={`Foto de ${atleta.nome}`}
+                fill
+                priority
+                sizes="(min-width: 768px) 320px, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="rounded-2xl bg-uem-surface p-5">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-uem-black/60">Melhor marca</p>
+              <ul className="mt-1">
+                {/* Atletas com mais de uma prova têm as marcas separadas por " · " em data/atletas.json. */}
+                {atleta.melhorMarca.split(" · ").map((marca) => (
+                  <li key={marca} className="font-display text-2xl font-bold tabular-nums text-uem-green-deep">
+                    {marca}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          {atleta.redesSociais.instagram && (
-            <a
-              href={atleta.redesSociais.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-block font-medium text-uem-green-deep hover:underline"
-            >
-              Instagram
-            </a>
-          )}
+          <div className="max-w-[68ch]">
+            <div className="space-y-4 text-lg leading-relaxed text-uem-black/85">
+              {atleta.bioCompleta.split("\n\n").map((paragrafo, i) => (
+                <p key={i}>{paragrafo}</p>
+              ))}
+            </div>
+            {atleta.redesSociais.instagram && (
+              <a
+                href={atleta.redesSociais.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-block font-medium text-uem-green-deep hover:underline"
+              >
+                Instagram
+              </a>
+            )}
+          </div>
         </div>
-      </div>
-    </Section>
+      </Section>
+    </>
   );
 }

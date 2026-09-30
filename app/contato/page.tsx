@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getContent } from "@/lib/content";
 import ContactForm from "@/components/ContactForm";
 import Markdown from "@/components/Markdown";
+import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import { SITE } from "@/lib/site";
 
@@ -14,13 +15,15 @@ export default async function ContatoPage() {
   const conteudo = await getContent("contato-intro");
 
   return (
-    <Section title={conteudo.titulo}>
-      <div className="grid gap-10 sm:grid-cols-2">
+    <>
+      <PageHeader title={conteudo.titulo} eyebrow="Fale com a gente" />
+      <Section>
+      <div className="grid gap-10 md:grid-cols-2 lg:gap-16">
         <div>
           <Markdown html={conteudo.html} />
-          <dl className="mt-6 flex flex-col gap-3 text-sm">
+          <dl className="mt-8 flex flex-col gap-5">
             <div>
-              <dt className="font-medium">E-mail institucional</dt>
+              <dt className="text-xs font-medium uppercase tracking-[0.14em] text-uem-black/60">E-mail institucional</dt>
               <dd>
                 {SITE.emailInstitucional ? (
                   <a href={`mailto:${SITE.emailInstitucional}`} className="text-uem-green-deep hover:underline">
@@ -32,7 +35,7 @@ export default async function ContatoPage() {
               </dd>
             </div>
             <div>
-              <dt className="font-medium">Telefone</dt>
+              <dt className="text-xs font-medium uppercase tracking-[0.14em] text-uem-black/60">Telefone</dt>
               <dd>
                 {SITE.telefone ? (
                   <a
@@ -47,7 +50,7 @@ export default async function ContatoPage() {
               </dd>
             </div>
             <div>
-              <dt className="font-medium">Redes sociais</dt>
+              <dt className="text-xs font-medium uppercase tracking-[0.14em] text-uem-black/60">Redes sociais</dt>
               <dd>
                 {SITE.instagram ? (
                   <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" className="text-uem-green-deep hover:underline">
@@ -59,7 +62,7 @@ export default async function ContatoPage() {
               </dd>
             </div>
             <div>
-              <dt className="font-medium">Localização</dt>
+              <dt className="text-xs font-medium uppercase tracking-[0.14em] text-uem-black/60">Localização</dt>
               <dd>
                 {SITE.localizacao ? (
                   <a href={SITE.localizacao} target="_blank" rel="noopener noreferrer" className="text-uem-green-deep hover:underline">
@@ -73,8 +76,11 @@ export default async function ContatoPage() {
           </dl>
         </div>
 
-        <ContactForm />
+        <div className="rounded-3xl bg-uem-surface p-6 sm:p-8">
+          <ContactForm />
+        </div>
       </div>
-    </Section>
+      </Section>
+    </>
   );
 }

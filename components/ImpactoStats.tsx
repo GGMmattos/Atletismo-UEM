@@ -6,14 +6,18 @@ const LABELS: { key: keyof Impacto; label: string }[] = [
   { key: "atletasNaEquipe", label: "Atletas na equipe" },
 ];
 
+/** Mostra só os números já preenchidos em data/impacto.json (os `null` ficam de fora, em vez de "—"). */
 export default function ImpactoStats({ impacto }: { impacto: Impacto }) {
+  const preenchidos = LABELS.filter(({ key }) => impacto[key] !== null);
+  if (preenchidos.length === 0) return null;
+
   return (
-    <dl className="grid grid-cols-2 gap-6 sm:grid-cols-3">
-      {LABELS.map(({ key, label }) => (
-        <div key={key} className="text-center">
-          <dt className="text-sm text-uem-black/70">{label}</dt>
-          <dd className="text-3xl font-bold text-uem-green-deep">
-            {impacto[key] === null ? "—" : impacto[key]}
+    <dl className="flex flex-wrap gap-x-12 gap-y-6">
+      {preenchidos.map(({ key, label }) => (
+        <div key={key} className="flex flex-col-reverse">
+          <dt className="text-sm font-medium text-uem-black/60">{label}</dt>
+          <dd className="font-display text-7xl font-bold leading-none tabular-nums text-uem-green-deep">
+            {impacto[key]}
           </dd>
         </div>
       ))}
